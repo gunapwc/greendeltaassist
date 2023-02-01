@@ -1,9 +1,18 @@
-import './Root.scss';
-import img2 from "./header img1.svg";
-import img1 from "./header img2.svg";
-import img3 from "./header-whatsapp.svg";
-import img4 from "./header-call.svg";
+import './header.scss';
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import {
+    Logo,
+    Secure,
+    Online,
+    Call,
+    Whatsapp,
+    Linkedin,
+    Facebook,
+    Instagram,
+    Youtube,
+    Twitter,
+  } from "../../utils/images";
 // import Menu from '@mui/material/Menu';
 // import MenuItem from '@mui/material/MenuItem';
 
@@ -90,7 +99,7 @@ function Header() {
     return (
         <>
             <header className="App-header">
-                <img src={img1}></img>
+                <img src={Logo}></img>
                 <button className="button-header">
                     <a className="link">Shop Online</a>
                 </button>
@@ -103,30 +112,30 @@ function Header() {
                 </Menu> */}
                 <ul className="list-header" >
                     <li className="listItem">
-                        <Link className="link" onClick={(e) => { activeLink(e); }}>About Us</Link>
+                        <Link className="link" to="../About Us" onClick={(e) => { activeLink(e); }}>About Us</Link>
                     </li>
                     <li className="listItem">
-                        <Link className="link" onClick={(e) => { activeLink(e); }}>Product Categories</Link>
+                        <Link className="link" to="../Product Categories" onClick={(e) => { activeLink(e); }}>Product Categories</Link>
                     </li>
                     <li className="listItem">
-                        <Link className="link" to="../partner" onClick={(e) => { activeLink(e); }}>Partner</Link>
+                        <Link className="link" to="../Partner" onClick={(e) => { activeLink(e); }}>Partner</Link>
                     </li>
                     <li className="listItem">
-                        <Link className="link" onClick={(e) => { activeLink(e); }}>Store Locator</Link>
+                        <Link className="link" to="../Store Locator" onClick={(e) => { activeLink(e); }}>Store Locator</Link>
                     </li>
                     <li className="listItem">
-                        <Link className="link" onClick={(e) => { activeLink(e); }}>Careers</Link>
+                        <Link className="link" to="../Careers" onClick={(e) => { activeLink(e); }}>Careers</Link>
                     </li>
                 </ul>
-                <img src={img2}></img>
+                <img src={Secure}></img>
                 <div className="header-div">
                     For home Delivery
                     <br />
-                    <img src={img3}></img>
-                    <img src={img4}></img>
+                    <img src={Whatsapp}></img>
+                    <img src={Call}></img>
                     800700600
                 </div>
-                <div className="container" onClick={() => setMenuToggle(!menuToggle)}>
+                <div className="container1" onClick={() => setMenuToggle(!menuToggle)}>
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
@@ -136,14 +145,14 @@ function Header() {
                 <div className="magaMenu">
                     <ul>
                         {menuList[1].map((e) => (
-                            <Link to={e.listItem}>
+                            <Link to={e.listItem} onClick={(e) => { activeLink(e); }}>
                                 <li>{e.listItem}</li>
                             </Link>
                         ))}
                     </ul>
                     <ul>
                         {menuList[2].map((e) => (
-                            <Link to={e.listItem}>
+                            <Link to={e.listItem} onClick={(e) => { activeLink(e); }}>
                                 <li>{e.listItem}</li>
                             </Link>
                         ))}

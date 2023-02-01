@@ -9,7 +9,7 @@ function Partner() {
         <div className="partner">
             {/* <Header /> */}
             {/* <div className="header-align"></div>add this with header */}
-            <div className="banner">
+            <div className="bannerp">
                 <div className="banner-text">
                     <h3>
                         Partner With Us <br />

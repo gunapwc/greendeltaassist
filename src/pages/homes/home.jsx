@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../component/button/button";
-import Header from "../../component/header/header";
+// import Header from "../../component/header/header";
 import PriTitle from "../../component/innerSection/PriTitle";
 import OurServices from "../../component/ourservices/OurServices";
 import Outlets from "../../component/outlets/Outlets";
@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className=" container">
         <div className="banner ">
           <div className="banner_vedio">
@@ -193,7 +193,7 @@ function Home() {
 
       </div>
       <Outlets/>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
