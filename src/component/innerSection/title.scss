@@ -1,0 +1,31 @@
+@import "/src/App.scss";
+.innerSection{
+    padding: 50px 0;
+    &_title{
+           font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+color: $MountainMeadow;
+margin-bottom: 10px;
+    }
+    &_subTitle{
+        color: $AcademyBlue;
+        letter-spacing: 0.64px;
+        font-size: clamp( 20px ,5vw,32px);
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: clamp( 24px ,5vw,42px);
+        margin-bottom: 16px;
+    }
+    &_detail{
+        color: $paragraphColor;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+ 
+}

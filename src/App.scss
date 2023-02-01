@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+$AcademyBlue:#164D92;
+$BrightYellow:#FAA61A;
+$MountainMeadow:#00B48D;
+$DarkMidnightBlue:#003377;
+$paragraphColor:#464749;
+$GreenMunsell:#12A77A;
+$white:#FFFFFF;
+$Black:#000000;
+$DarkGray:#B1B1B1;
+$MountainMeadow2:#00B38C;
+
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: unset;
+}
+h1, h2, h3, h4, h5, h6{
+//   letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+// img{
+//     width: 100%;
+//     display: block;
+// }
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+button{
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1.8rem;
+}
+input, textarea, select{
+    outline: 0;
+    border: none;
+    resize: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+.container
+ {
+  padding: 0 20px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    // padding-inline: 10px;
+    box-sizing: border-box;
+    
+    @media (min-width:1400px) {
+            max-width: 1263px
+    }
+}
+.inner-container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 7px;
+  margin: 0 auto;
+}
+.button_section{
+  text-align: center;
+  padding: 50px 0;
+}
+
+// @mixin socIcon() {
+//                     width: 36px;
+//                     height: 36px;
+//                     border-radius: 25px;
+//                     border: 2px solid #fff;
+//                     line-height: 27px;
+//                     text-align: center;
+//                     margin: 0 5px;
+
+//                     display: inline-flex;
+//                     align-items: center;
+//                     justify-content: center;
+  
+// }
+
+@mixin socIcon($color) {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 25px;
+  border: 2px solid $color;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+
+ 
+}

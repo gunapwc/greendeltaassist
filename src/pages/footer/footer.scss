@@ -1,0 +1,120 @@
+
+@import "/src/App.scss";
+
+footer{
+background: $AcademyBlue;
+float: left;
+display: block;
+width: 100%;
+padding: 10px;
+.info{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $white;
+    &_location{
+        display: flex;
+        align-items: center;
+        &_icon{
+            width: 40px;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $MountainMeadow;
+    border-radius: 50%;
+   
+    img{
+        padding: 5px;
+    }
+        }
+        &_text{
+            width: calc( 100% - 50px);
+            text-transform: capitalize;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+.main_section{
+    margin-top: 30px;
+    &_main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        color: $white;
+      
+        ul{
+            li{
+
+            }
+        }
+        &_news{
+            display: flex;
+            gap: 10px;
+            padding: 20px 0;
+            &_img{
+
+            }
+            &_date{
+                font-size: 12px;
+            }
+        }
+        .sigi_section{
+            label{
+                padding-bottom: 30px;
+                display: block;
+
+            }
+            &_input{
+                position: relative;
+                input{
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 8px 30px 8px 10px;
+                    background: $white;
+                    border-radius: 25px;
+                    border: unset;
+                }
+                span{
+                    position: absolute;
+                    right: 0;
+                    top: 10%;
+                    width: 30px;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        object-fit: contain;
+                    }
+
+                }
+            }
+            &_icon{
+                padding-top:80px;
+                
+            }
+            &_icons{
+
+                    padding-top: 10px;
+                span{
+                    @include socIcon($white);
+                }
+            }
+        }
+
+    }
+    &_sub_footer{
+        color: $white;
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        
+    }
+}
+}
