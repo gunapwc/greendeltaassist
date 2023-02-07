@@ -26,7 +26,7 @@ function Header() {
       {
         id: 2,
         listItem: "Product Categories",
-        link: "product-catogories",
+        link: "product-categories",
       },
       {
         id: 3,
@@ -53,7 +53,7 @@ function Header() {
       {
         id: 2,
         listItem: "Product Categories",
-        link: "product-catogories",
+        link: "product-categories",
       },
       {
         id: 3,
@@ -80,7 +80,7 @@ function Header() {
       {
         id: 2,
         listItem: "Product Categories",
-        link: "product-catogories",
+        link: "product-categories",
       },
       {
         id: 3,

@@ -66,6 +66,7 @@ import HealthcareTips2 from "../asset/image/HealthcareTips2.png";
 import HealthcareTips3 from "../asset/image/HealthcareTips3.png";
 import HealthcareTips4 from "../asset/image/HealthcareTips4.png";
 
+import PopularImg1 from "../asset/image/popular_img1.png";
 import Outlet1 from "../asset/image/outlet1.png";
 import Outlet2 from "../asset/image/outlet2.png";
 import Outlet3 from "../asset/image/outlet3.png";
@@ -77,6 +78,12 @@ import MotherTeresa from "../asset/image/Mother_Teresa.svg";
 import Einstein from "../asset/image/Einstein.svg";
 import SteveJobs from "../asset/image/SteveJobs.svg";
 import SHZayed from "../asset/image/SH_Zayed.svg";
+import Callgreen from "../asset/image/call-green.svg";
+import Shipping from "../asset/image/shipping.svg";
+import Locationgreen from "../asset/image/location-green.svg";
+import Setting from "../asset/image/setting.svg";
+import Time from "../asset/image/time.svg";
+import Watch from "../asset/image/watch.svg";
 
 export {
   Logo,
@@ -137,5 +144,17 @@ export {
   HealthcareTips2,
   HealthcareTips3,
   HealthcareTips4,
-  CareBrands1,CareBrands2,CareBrands3,CareBrands4,CareBrands5,CareBrands6,CareBrands7,Outlet1,Outlet2,Outlet3
+  CareBrands1,
+  CareBrands2,
+  CareBrands3,
+  CareBrands4,
+  CareBrands5,
+  CareBrands6,
+  CareBrands7,
+  Outlet1,
+  Outlet2,
+  Outlet3,
+  PopularImg1,
+  Watch,
+  Time,Setting,Locationgreen,Shipping,Callgreen
 };
