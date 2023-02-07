@@ -11,6 +11,7 @@ $white:#FFFFFF;
 $Black:#000000;
 $DarkGray:#B1B1B1;
 $MountainMeadow2:#00B38C;
+$lightColor:#EEF5FC;
 
 
 *,
@@ -115,7 +116,27 @@ input, textarea, select{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-
- 
+}
+.slick-slide {
+  padding: 5px;
+}
+.slick-next, .slick-prev{
+  top: -20px;
+  right: 10px;
+}
+.slick-next:before, .slick-prev:before{
+  background: url(./asset/image/arrow.png) center no-repeat;
+  display: block;
+  width: 25px;
+  aspect-ratio: 1;
+  content: "";
+  opacity: 1;
+  z-index: 55;
+}
+.slick-next:before{
+  rotate: 180deg;
+}
+.slick-prev{
+  left: unset;
+  right: 40px;
 }

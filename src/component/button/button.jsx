@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./button.scss"
 
-const Button = ({text}) => {
+export function Button({text})  {
   return (
     <>
     <button className='button-primary'>{text}</button>
@@ -11,4 +11,4 @@ const Button = ({text}) => {
   )
 }
 
-export default Button
+
