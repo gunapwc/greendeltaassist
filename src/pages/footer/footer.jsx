@@ -24,66 +24,81 @@ function Footer() {
       {
         id: 1,
         listItem: "About Us",
+        link: "about-us",
       },
       {
         id: 2,
         listItem: "Product Categories",
+        link: "product-categories",
       },
       {
         id: 3,
         listItem: "Partner",
+        link: "partner",
       },
       {
         id: 4,
         listItem: "Store Locator",
+        link: "store-locator",
       },
       {
         id: 5,
         listItem: "Careers",
+        link: "careers",
       },
     ],
     [
       {
         id: 1,
         listItem: "About Us",
+        link: "about-us",
       },
       {
         id: 2,
         listItem: "Product Categories",
+        link: "product-categories",
       },
       {
         id: 3,
         listItem: "Partner",
+        link: "partner",
       },
       {
         id: 4,
         listItem: "Store Locator",
+        link: "store-locator",
       },
       {
         id: 5,
         listItem: "Careers",
+        link: "careers",
       },
     ],
     [
       {
         id: 1,
         listItem: "About Us",
+        link: "about-us",
       },
       {
         id: 2,
         listItem: "Product Categories",
+        link: "product-categories",
       },
       {
         id: 3,
         listItem: "Partner",
+        link: "partner",
       },
       {
         id: 4,
         listItem: "Store Locator",
+        link: "store-locator",
       },
       {
         id: 5,
         listItem: "Careers",
+        link: "careers",
       },
     ],
   ];
@@ -135,7 +150,7 @@ function Footer() {
               <li>
                 <ul>
                   {menuList[2].map((e) => (
-                    <Link to={e.listItem}>
+                    <Link to={e.link}>
                       <li>{e.listItem}</li>
                     </Link>
                   ))}

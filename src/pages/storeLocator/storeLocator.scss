@@ -1,0 +1,34 @@
+.location{
+    &_List{
+        color: #164D92;
+        @mixin flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        &_header{
+            font-size: 18px;
+@include flex;
+        }
+        &_add{
+            @include flex;
+            font-size:12px;
+            &_inner{
+                display: flex;
+                align-items: center;
+            }
+        }
+        &_time{
+
+        }
+        &_btn{
+            &_inner{
+                display: flex;
+                align-items: center;
+            }
+            font-size: 16px;
+            @include flex;
+        }
+    }
+}

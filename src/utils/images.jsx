@@ -68,15 +68,43 @@ import ProductCategoriesIcon2 from "../asset/image/product-categories-img-2icon.
 import ProductCategoriesIcon3 from "../asset/image/product-categories-img-3icon.png";
 import ProductCategoriesIcon4 from "../asset/image/product-categories-img-4icon.png";
 import AboutBanner from "../asset/image/aboutBanner.png";
+import Emg24 from "../asset/image/emg24.png";
+import GlobalNet from "../asset/image/globalNet.png";
+import BlogBanner5 from "../asset/image/blogBanner_5.png";
+import BlogBanner4 from "../asset/image/blogBanner_4.png";
+import BlogBanner3 from "../asset/image/blogBanner_3.png";
+import BlogBanner2 from "../asset/image/blogBanner_2.png";
+import BlogBanner1 from "../asset/image/blogBanner_1.png";
+import HealthcareTips1 from "../asset/image/HealthcareTips1.png";
+import HealthcareTips2 from "../asset/image/HealthcareTips2.png";
+import HealthcareTips3 from "../asset/image/HealthcareTips3.png";
+import HealthcareTips4 from "../asset/image/HealthcareTips4.png";
+
+import PopularImg1 from "../asset/image/popular_img1.png";
+import Outlet1 from "../asset/image/outlet1.png";
+import Outlet2 from "../asset/image/outlet2.png";
+import Outlet3 from "../asset/image/outlet3.png";
+
 import Video from "../asset/image/homenew.mp4";
+import Gandhi from "../asset/image/Gandhi.svg";
+import NelsonMandela from "../asset/image/Nelson_Mandela.svg";
+import MotherTeresa from "../asset/image/Mother_Teresa.svg";
+import Einstein from "../asset/image/Einstein.svg";
+import SteveJobs from "../asset/image/SteveJobs.svg";
+import SHZayed from "../asset/image/SH_Zayed.svg";
+import Callgreen from "../asset/image/call-green.svg";
+import Shipping from "../asset/image/shipping.svg";
+import Locationgreen from "../asset/image/location-green.svg";
+import Setting from "../asset/image/setting.svg";
+import Time from "../asset/image/time.svg";
+import Watch from "../asset/image/watch.svg";
 
 export {
-  HealthLibrary1,
   Logo,
   AsterNli,
   AsterPath,
   Asterdonline,
-//   BeautyIcon,
+  //   BeautyIcon,
   BlackDown,
   Call,
   CloseIcon,
@@ -122,5 +150,39 @@ export {
   ProductCategories2,
   ProductCategories3,
   ProductCategories4,
-  ProductCategoriesIcon1,ProductCategoriesIcon2,ProductCategoriesIcon3,ProductCategoriesIcon4,AboutBanner
+  ProductCategoriesIcon1,
+  ProductCategoriesIcon2,
+  ProductCategoriesIcon3,
+  ProductCategoriesIcon4,
+  AboutBanner,
+  Gandhi,
+  NelsonMandela,
+  MotherTeresa,
+  Einstein,
+  SteveJobs,
+  SHZayed,
+  Emg24,
+  GlobalNet,
+  BlogBanner1,
+  BlogBanner2,
+  BlogBanner3,
+  BlogBanner4,
+  BlogBanner5,
+  HealthcareTips1,
+  HealthcareTips2,
+  HealthcareTips3,
+  HealthcareTips4,
+  CareBrands1,
+  CareBrands2,
+  CareBrands3,
+  CareBrands4,
+  CareBrands5,
+  CareBrands6,
+  CareBrands7,
+  Outlet1,
+  Outlet2,
+  Outlet3,
+  PopularImg1,
+  Watch,
+  Time,Setting,Locationgreen,Shipping,Callgreen
 };

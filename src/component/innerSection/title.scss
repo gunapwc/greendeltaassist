@@ -1,8 +1,9 @@
 @import "/src/App.scss";
 .innerSection{
-    padding: 50px 0;
+ 
     &_title{
            font-weight: 700;
+           padding-top: 30px;
 font-size: 16px;
 line-height: 19px;
 letter-spacing: 1.6px;
@@ -17,7 +18,7 @@ margin-bottom: 10px;
         text-transform: capitalize;
         font-weight: 600;
         line-height: clamp( 24px ,5vw,42px);
-        margin-bottom: 16px;
+        margin-bottom: 6px;
     }
     &_detail{
         color: $paragraphColor;
@@ -26,6 +27,8 @@ margin-bottom: 10px;
         letter-spacing: 0.75px;
         cursor: pointer;
         font-size: 16px;
+        padding-bottom: 20px;
+        padding-top: 10px;
     }
  
 }

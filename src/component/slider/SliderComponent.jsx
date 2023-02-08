@@ -1,39 +1,76 @@
-import React from 'react'
-
+import React, { Component } from "react";
 import Slider from "react-slick";
 
-const SliderComponent = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1};
-  return (
-    <div>
-        <h2> Single Item</h2>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-    </div>
-  )
+const SimpleSlider = (props) => {
+const {lgslidesToShow,smslidesToShow,center,rows} = props
+const settings = {
+  dots: true,
+infinite: true,
+centerMode: center?true:false,
+centerPadding: center?center:'0px',
+speed: 300,
+slidesToShow: rows?2:lgslidesToShow? lgslidesToShow :4,
+slidesToScroll:rows?2:lgslidesToShow? lgslidesToShow :4,
+dots: false,
+    rows: rows?2:1,
+
+
+
+
+responsive: [
+{
+  breakpoint: 1024,
+  settings: {
+    slidesToShow:rows?2:center?1: 3,
+    slidesToScroll:rows?2:center?1: 3,
+    infinite: true,
+    dots: false,
+    
+  }
+},
+{
+  breakpoint: 600,
+  settings: {
+    centerPadding: center?"100px":'0px',
+    slidesToShow: rows?2:center?1:smslidesToShow? smslidesToShow :3,
+    slidesToScroll:rows?2:center?1:smslidesToShow? smslidesToShow :3,
+    dots: true,
+    arrows: false,
+
+  }
+},
+{
+  breakpoint: 480,
+  settings: {
+    slidesToShow: 1,
+    dots: true,
+    slidesToScroll: 1,
+    arrows: false,
+    centerPadding: center?"60px":'0px',
+    rows:1,
+  }
+},{
+  breakpoint: 400,
+  settings: {
+    slidesToShow: 1,
+    dots: true,
+    slidesToScroll: 1,
+    arrows: false,
+    centerPadding: center?"10px":'0px',
+    rows:1,
+  }
 }
 
-export default SliderComponent;
+],
+}
+    return (
+      <>
+        <Slider {...settings}>
+        {props.children}
+
+        </Slider>
+      </>
+    )
+  }
+
+  export default SimpleSlider
