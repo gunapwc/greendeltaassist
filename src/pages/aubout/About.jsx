@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../../component/banner/Banner'
 // import Header from '../../component/header/header'
-import OurServices from '../../component/ourservices/OurServices'
+import OurServices from '../ourservices/OurServices'
 import Outlets from '../../component/outlets/Outlets'
 import Footer from '../footer/footer'
 import {AboutBanner} from "../../utils/images";
@@ -13,9 +13,9 @@ export const About = () => {
 {/* <Header  /> */}
 <div className='container'>
   <Banner img ={AboutBanner} title={"ABOUT ASTER PHARMACY"}text={"Exceeding Expectations, Offering Much More Than Medicines"} />
-  <OurServices/>
+  {/* <OurServices/> */}
   </div>
-<Outlets/>
+{/* <Outlets/> */}
 {/* <Footer/> */}
 
     </>

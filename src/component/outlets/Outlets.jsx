@@ -7,7 +7,7 @@ import "./Outlets.scss"
 const Outlets = () => {
   return (
     <>
-            <div className="outlets">
+            <div className="outlets container">
           <PriTitle
             title={"OUR RETAIL OUTLETS"}
             subTitle={"Professional Service & Care In A Pleasant Ambience"}

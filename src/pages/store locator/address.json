@@ -1,0 +1,66 @@
+[
+    {
+        "city":"Kolkata",
+        "address":"THE KIDWAI PHARMACYPharmacy54/2,<br/> Rafi Ahmed Kidwai Rd ·<br/> 033 2217 1127<br/> Open ⋅ Closes 11 pm <br/>In-store shopping·Delivery"
+    },
+    {
+        "city":"Kolkata",
+        "address":"Bhumika Pharmacy Shop No, Near juggals,<br/> 156/C, Rash Behari Ave ·<br/> 097480 39717<br/> Open ⋅ Closes 9:30 pm<br/> In-store shopping· Delivery"
+    },
+    {
+        "city":"Kolkata",
+        "address":"Zee pharmacyPharmacy16,<br/> Royd St ·<br/> 090737 22849<br/> Open ⋅ Closes 11:30<br/> pmDelivery"
+    },
+    {
+        "city":"Kolkata",
+        "address":"Park Blue Print Pharmacy 30-A,<br/> Jawaharlal Nehru Rd · Near the Indian Museum ·<br/> 098303 08087<br/> Closes soon ⋅ 8 pm<br/> In-store shopping· In-store pick-up· Delivery"
+    },
+    {
+        "city":"Chennai",
+        "address":"India Pharmacy Pharmacy 30/B, L.B Road,<br/> Opp HDFC Bank, K. K. M. Salai, Thiruvanmiyur ·<br/> 088844 79088<br/> Open ⋅ Closes 9:30 pm<br/> In-store shopping· In-store pick-up· Delivery"
+    },
+    {
+        "city":"Chennai",
+        "address":"New Chennai Pharmacy Pharmacy No. 33,<br/> Sarojini Street, T.Nagar, S Usman Road ·<br/> 091500 97960<br/> Open ⋅ Closes 11 pm"
+    },
+    {
+        "city":"Chennai",
+        "address":"PRIDE PHARMACY Pharmacy BENEFIT FUND,<br/> 4/272 PAARI SALAI MOGAPPAIR EAST, opp. to PURASAI<br/> Open 24 hours<br/> In-store shopping· Delivery"
+    },
+    {
+        "city":"Chennai",
+        "address":"PRIDE PHARMACY Pharmacy SRINIVASAN COMPLEX OLD NO: 33<br/> NEW NO: 61 MAYOR RAMANATHAN SALAI (FORMERLY, Spur Tank road ·<br/> 093427 98514<br/> Closes soon ⋅ 8 pm<br/> In-store shopping· In-store pick-up· Delivery"
+    },
+    {
+        "city":"Gurgaon",
+        "address":"PwC Pharmacy Gurgaon Sector 31 Pharmacy<br/> Shop No.158, Huda Market ·<br/> 0124 438 7326<br/> Open ⋅ Closes 11 pm<br/> In-store shopping· In-store pick-up· Delivery"
+    },
+    {
+        "city":"Gurgaon",
+        "address":"PwC Pharmacy Gurugram Central Plaza Pharmacy<br/> Unnamed Road ·<br/> 099114 81118<br/> Open ⋅ Closes 11 pm<br/> In-store shopping· Delivery"
+    },
+    {
+        "city":"Gurgaon",
+        "address":"Pasricha Pharmacy Pharmacy 2,<br/> Mehrauli-Gurgaon Rd<br/> Open ⋅ Closes 9 pm<br/> In-store shopping· Delivery"
+    },
+    {
+        "city":"Gurgaon",
+        "address":"PwC Pharmacy Sector 14<br/> Gurugram Pharmacy Booth No.118<br/> Sector 14 Main Road near Huda Office ·<br/> 088269 92285<br/> Open 24 hours<br/> In-store shopping· In-store pick-up· Delivery"
+    },
+    {
+        "city":"Mumbai",
+        "address":"PwC Pharmacy Kandivali East Pharmacy APOLLO PHARMACY<br/> SHOP NO-3,AWING GROUND FLOOR,SWED GANGA BUILDING,ANAND NAGAR,<br/> DAH Kandivali East ·<br/> 07710090127<br/> Open ⋅ Closes 11 pm<br/> In-store shopping· In-store pick-up· Delivery"
+    },
+    {
+        "city":"Mumbai",
+        "address":"Shree Sadguru Krupa Medical Pharmacy Mumbai,<br/> Maharashtra"
+    },
+    {
+        "city":"Mumbai",
+        "address":"Kurla Chemist And General Store Pharmacy Shop No.4,<br/> Al-Baitunnoor C. H.S, Bldg, SG Barve Marg,<br/> opp. Shanti Niketan <br/>Open ⋅ Closes 12 am<br/> In-store shopping· Delivery"
+    },
+    {
+        "city":"Mumbai",
+        "address":"Evercure Pharmaceuticals Pharmacy 1st Floor,<br/> 3a, Rani Building, 271, V P Road, Prarthana Samaj, Prarthana Samaj ·<br/> 022 2382 9943"
+    }
+]

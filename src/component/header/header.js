@@ -49,27 +49,9 @@ function Header() {
                 id: 5,
                 listItem: "Careers",
             },
-        ],
-        [
             {
-                id: 1,
-                listItem: "About Us",
-            },
-            {
-                id: 2,
-                listItem: "Product Categories",
-            },
-            {
-                id: 3,
-                listItem: "Partner",
-            },
-            {
-                id: 4,
-                listItem: "Store Locator",
-            },
-            {
-                id: 5,
-                listItem: "Careers",
+                id: 6,
+                listItem: "Our Services",
             },
         ],
         [
@@ -92,6 +74,36 @@ function Header() {
             {
                 id: 5,
                 listItem: "Careers",
+            },
+            {
+                id: 6,
+                listItem: "Our Services",
+            },
+        ],
+        [
+            {
+                id: 1,
+                listItem: "About Us",
+            },
+            {
+                id: 2,
+                listItem: "Product Categories",
+            },
+            {
+                id: 3,
+                listItem: "Partner",
+            },
+            {
+                id: 4,
+                listItem: "Store Locator",
+            },
+            {
+                id: 5,
+                listItem: "Careers",
+            },
+            {
+                id: 6,
+                listItem: "Our Services",
             },
         ],
     ];
@@ -103,13 +115,6 @@ function Header() {
                 <button className="button-header">
                     <a className="link">Shop Online</a>
                 </button>
-                {/* <Menu >
-                    <MenuItem>About Us</MenuItem>
-                    <MenuItem>Product Categories</MenuItem>
-                    <MenuItem>Partner</MenuItem>
-                    <MenuItem>Store Locator</MenuItem>
-                    <MenuItem>Careers</MenuItem>
-                </Menu> */}
                 <ul className="list-header" >
                     <li className="listItem">
                         <Link className="link" to="../About Us" onClick={(e) => { activeLink(e); }}>About Us</Link>

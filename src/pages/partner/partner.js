@@ -22,7 +22,7 @@ function Partner() {
                     <img src={img1}></img>
                 </div>
             </div>
-            <div className="content-div" style={{ margin: "0% 15% 0% 15%" }}>
+            <div className="content-div container">
 
                 <br />
                 <br />

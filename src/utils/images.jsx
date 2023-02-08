@@ -33,10 +33,24 @@ import HealthLibrary1 from "../asset/image/healthlibrary-img-1.png";
 import HealthLibrary2 from "../asset/image/healthlibrary-img-2.png";
 import HealthLibrary3 from "../asset/image/healthlibrary-img-3.png";
 import HealthLibrary4 from "../asset/image/healthlibrary-img-4.png";
-import OurServices1 from "../asset/image/ourservices-img-1.png";
-import OurServices2 from "../asset/image/ourservices-img-2.png";
-import OurServices3 from "../asset/image/ourservices-img-3.png";
-import OurServices4 from "../asset/image/ourservices-img-4.png";
+import OurServices1 from "../asset/image/xAsterSecure_Left.jpg.pagespeed.ic.H5bQtc72aZ.webp";
+import OurServices2 from "../asset/image/xAster_Online_Left.jpg.pagespeed.ic.xTON8kMtVj.webp";
+import OurServices3 from "../asset/image/xFreeHomeDelivery_Left.jpg.pagespeed.ic.nmU7bwlaFr.webp";
+import OurServices4 from "../asset/image/xourservices_01.png.pagespeed.ic.0KcKB8io8O.webp";
+import OurServices5 from "../asset/image/xTeleconsultationBannerLeft.png.pagespeed.ic.U9SzSbPmvL.webp";
+import OurServices6 from "../asset/image/servicedeliver-icon5_01.svg";
+import OurServices7 from "../asset/image/servicedeliver-icon1_01.svg";
+import OurServices8 from "../asset/image/servicedeliver-icon2_01.svg";
+import OurServices9 from "../asset/image/servicedeliver-icon3_01.svg";
+import OurServices10 from "../asset/image/xservicedeliver-icon4.png.pagespeed.ic.kNBrINrdxR.webp";
+import OurServices11 from "../asset/image/AsterOnlineLogo_01.svg";
+import OurServices12 from "../asset/image/serviceaster-icon3_01.svg";
+import OurServices13 from "../asset/image/serviceaster-icon4_01.svg";
+import OurServices14 from "../asset/image/serviceaster-icon5_01.svg";
+import OurServices15 from "../asset/image/AsterSecureLogo_01.svg";
+import OurServices16 from "../asset/image/Artboard_2_01.svg";
+import search from "../asset/image/search.svg";
+import setting from "../asset/image/setting.svg";
 import CareBrands1 from "../asset/image/carebrands-img-1.png";
 import CareBrands2 from "../asset/image/carebrands-img-2.png";
 import CareBrands3 from "../asset/image/carebrands-img-3.png";
@@ -90,6 +104,20 @@ export {
   OurServices2,
   OurServices3,
   OurServices4,
+  OurServices5,
+  OurServices6,
+  OurServices7,
+  OurServices8,
+  OurServices9,
+  OurServices10,
+  OurServices11,
+  OurServices12,
+  OurServices13,
+  OurServices14,
+  OurServices15,
+  OurServices16,
+  search,
+  setting,
   ProductCategories1,
   ProductCategories2,
   ProductCategories3,

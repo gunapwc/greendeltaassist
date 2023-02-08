@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../component/button/button";
 // import Header from "../../component/header/header";
 import PriTitle from "../../component/innerSection/PriTitle";
-import OurServices from "../../component/ourservices/OurServices";
+import OurServices from "../ourservices/OurServices";
 import Outlets from "../../component/outlets/Outlets";
 import {
   Video,
