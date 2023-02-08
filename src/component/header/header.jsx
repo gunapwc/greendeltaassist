@@ -42,7 +42,7 @@ function Header() {
         id: 5,
         listItem: "Careers",
         link: "careers",
-      },
+      }
     ],
     [
       {
@@ -70,6 +70,11 @@ function Header() {
         listItem: "Careers",
         link: "careers",
       },
+      {
+        id: 6,
+        listItem: "Our Services",
+        link: "Our Services",
+      }
     ],
     [
       {
@@ -97,6 +102,11 @@ function Header() {
         listItem: "Careers",
         link: "careers",
       },
+      {
+        id: 6,
+        listItem: "Our Services",
+        link: "Our Services",
+      }
     ],
   ];
   const [menuToggle, setMenuToggle] = useState(false);

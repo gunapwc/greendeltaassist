@@ -5,7 +5,7 @@ import Header from '../component/header/header';
 import Footer from '../pages/footer/footer';
 import Partner from '../pages/partner/partner';
 import BlogMain from '../pages/blogMain/BlogMain'
-import StoreLocator from '../pages/storeLocator/StoreLocator'
+// import StoreLocator from '../pages/storeLocator/StoreLocator'
 import Home from '../pages/homes/home'
 import OurServices from '../pages/ourservices/OurServices';
 import StoreLocator from '../pages/store locator/storeLocator';
