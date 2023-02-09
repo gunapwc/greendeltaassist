@@ -1,5 +1,19 @@
 .location{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 30px;
     &_List{
+        .svg_part{
+            min-width: 32px;
+            svg{
+                text-align: center;
+                width: 30px;
+            }
+        }
+        border-radius: 10px;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+        padding: 10px;
         color: #164D92;
         @mixin flex {
             display: flex;
@@ -20,12 +34,19 @@
             }
         }
         &_time{
-
+           display: flex;
+           font-size:12px;
         }
         &_btn{
             &_inner{
                 display: flex;
                 align-items: center;
+                
+            }
+            .button-primary{
+                font-size: 12px;
+                padding: 5px 7px;
+                font-weight: 500;
             }
             font-size: 16px;
             @include flex;

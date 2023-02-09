@@ -5,6 +5,7 @@ import Network from "../../component/network/Network";
 import OurServices from "../../component/ourservices/OurServices";
 import Outlets from "../../component/outlets/Outlets";
 import SimpleSlider from "../../component/slider/SliderComponent";
+import StoreFilter from "../../component/storeFilter/StoreFilter";
 import {
   Video,
   CardOneImg,
@@ -22,7 +23,15 @@ import {
 } from "../../utils/images";
 import Footer from "../footer/footer";
 import "./home.scss";
+import { useQuery } from '@apollo/client';
+import ABOUT_US_VIDEO from "../../gql/query_about_us_video.graphql";
+
+
+
 function Home() {
+
+  const { loading, error, data } = useQuery(ABOUT_US_VIDEO);
+
 
   return (
     <>
@@ -57,40 +66,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="store inner-container">
-          <h4>Store Locator</h4>
-          <div className="store_location">
-            <div className="store_location_city">
-              <select className="city">
-                <option value="city">city</option>
-                <option value="city">city</option>
-                <option value="city">city</option>
-                <option value="city">city</option>
-              </select>
-            </div>
-            <div className="store_location_area">
-              <select className="area">
-                <option value="area">city</option>
-                <option value="area">city</option>
-                <option value="area">city</option>
-                <option value="area">city</option>
-              </select>
-            </div>
-            <div className="store_location_time">
-              <div>
-                <input type={"checkbox"} />
-                <label> 24 Hours </label>
-              </div>
-              <div>
-                <input type={"checkbox"} />
-                <label> Home Delivery </label>
-              </div>
-            </div>
-            <div className="store_location_button">
-              <Button text={"SEARCH"} />
-            </div>
-          </div>
-        </div>
+       <StoreFilter/>
 
 <Network/>
         <div className="categories">

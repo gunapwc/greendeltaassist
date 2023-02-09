@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import {BlogBanner,BlogCard} from '../../component/blogBanner/BlogBanner'
+import Header from '../../component/header/header'
 import { productList } from '../../utils/listData'
+import Footer from '../footer/footer'
+import "./BlogMain.scss"
 
 const BlogMain = () => {
 
@@ -24,12 +27,21 @@ const BlogMain = () => {
   return (
     <>
 
-    <BlogBanner/>
 
+    <BlogBanner/>
+{
+ 
+}
     <div  className="container">
     
-    <BlogCard/>
+   <div className='blogCard_list'>
+   <BlogCard/>
+   <BlogCard/>
+   <BlogCard/>
+   <BlogCard/>
+   </div>
     </div>
+
 
     </>
   )

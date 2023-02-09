@@ -1,0 +1,108 @@
+@import "../../App.css";
+$AcademyBlue:#164D92;
+$BrightYellow:#FAA61A;
+$MountainMeadow:#00B48D;
+$DarkMidnightBlue:#003377;
+$paragraphColor:#464749;
+$GreenMunsell:#12A77A;
+$white:#FFFFFF;
+$Black:#000000;
+$DarkGray:#B1B1B1;
+$MountainMeadow2:#00B38C;
+$lightColor:#EEF5FC;
+.store{
+    h4{
+        color: $MountainMeadow2;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 3vh;
+
+    }
+    &_location{
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    align-items: baseline;
+    justify-content: center;
+    
+    &_city{
+        select{
+            width: 100%;
+            border-bottom: 1px solid $AcademyBlue ;
+            padding-bottom: 10px;
+            height: 100%;
+            padding-top: 10px;
+        }
+        
+    }
+    &_area{
+        select{
+            width: 100%;
+            border-bottom: 1px solid $AcademyBlue ;
+            padding-bottom: 10px;
+            height: 100%;
+        }
+        padding-top: 10px;
+    }
+    &_time{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 10px;
+
+        input{
+appearance: none;
+position: relative;
+height: 40px;
+&::before{
+    border: 1px solid #003D81;
+    border-radius: 19px;
+    content: "";
+    height: 35px;
+    margin-top: -8px;
+    position: absolute;
+    opacity: 0.3;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width: 67px;
+    top: 0;
+    left: 0;
+
+}
+&:checked::after{
+    background: #12A77A;
+    left: 36px;
+}
+&::after{
+    background: #E9EBEE;
+    border-radius: 16px;
+    content: "";
+    height: 25px;
+    left: 7px;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 25px;
+    top: -3px;
+}
+
+
+
+        }
+        label{
+            font-size: 12px;
+            color: $AcademyBlue;
+        }
+    }
+    &_button{
+        padding-top: 10px;
+
+    }
+}
+
+
+}
