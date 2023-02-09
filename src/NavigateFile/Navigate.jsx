@@ -15,7 +15,6 @@ function Navigate() {
     <>
     <BrowserRouter>
     <Header/>
-    <div style={{height:"100px"}}></div> 
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about-Us' element={<About/>}/>
