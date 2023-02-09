@@ -49,20 +49,23 @@ const BlogCard = (props) => {
 
   return (
     <div className='Category_card'>
-        <div className='Category_card_inner'>
+                <div className='Category_card_img'>
+                <img src={BlogBanner4} alt="" />
+        </div>
+<div className='Category_card_header'>
+<div className='Category_card_inner'>
 <button>Skin Care</button>
         <p className='Category_card_inner_date'>January 02, 2023</p>
         </div>
         <h1 className='Category_card_prod_title'>Enhance your beauty & improve joint health with Country Life Maxi- Collagen C&A+ Biotin Powder</h1>
-        <div className='Category_card_img'>
-            <img src="" alt="" />
-        </div>
+
         <p className="Category_card_ditails">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores distinctio, accusantium consectetur mollitia, aspernatur beatae fugit soluta, earum magnam sapiente corporis voluptatibus laboriosam! Odit, a? Laudantium aperiam aliquam nihil nulla!
         </p>
         <div className='Category_card_fav'>
             <img src="" alt="" />
         </div>
+</div>
        
 
     </div>
