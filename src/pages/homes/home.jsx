@@ -23,7 +23,15 @@ import {
 } from "../../utils/images";
 import Footer from "../footer/footer";
 import "./home.scss";
+import { useQuery } from '@apollo/client';
+import ABOUT_US_VIDEO from "../../gql/query_about_us_video.graphql";
+
+
+
 function Home() {
+
+  const { loading, error, data } = useQuery(ABOUT_US_VIDEO);
+
 
   return (
     <>
