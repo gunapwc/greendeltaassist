@@ -10,6 +10,7 @@ import Home from '../pages/homes/home'
 import OurServices from '../pages/ourservices/OurServices';
 import StoreLocator from '../pages/store locator/storeLocator';
 import ProductCategories from '../pages/productCategories/ProductCategories'
+import NewsRoom from '../pages/newsroom/newsroom';
 
 
 function Navigate() {
@@ -26,6 +27,7 @@ function Navigate() {
         <Route path='/product-categories' element={<ProductCategories/>}/>
         <Route path='/store-locator' element={<StoreLocator/>}/>
         <Route path='/Our Services' element={<OurServices/>}/>
+        <Route path='/newsroom' element={<NewsRoom/>}/>
     </Routes>
 
     <div style={{height:"100px"}}></div> 

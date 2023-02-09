@@ -74,6 +74,11 @@ function Header() {
         id: 6,
         listItem: "Our Services",
         link: "Our Services",
+      },
+      {
+        id: 7,
+        listItem: "News Room",
+        link: "newsroom",
       }
     ],
     [
@@ -106,7 +111,13 @@ function Header() {
         id: 6,
         listItem: "Our Services",
         link: "Our Services",
+      },
+      {
+        id: 7,
+        listItem: "News Room",
+        link: "newsroom",
       }
+
     ],
   ];
   const [menuToggle, setMenuToggle] = useState(false);
