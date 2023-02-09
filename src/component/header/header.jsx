@@ -121,14 +121,14 @@ function Header() {
           </ul>
           <div className="profilePart">
             <div className="secImg">
-              <img src={Secure} alt="Secure" />
+              {/* <img src={Secure} alt="Secure" /> */}
             </div>
             <div className="contNum">
               <p>FOR HOME DELIVERY</p>
               <p>
                 {" "}
                 <img src={Whatsapp} alt="Whatsapp" />{" "}
-                <img src={Call} alt="Call" /> 7358308557
+                <img src={Call} alt="Call" /> XXXXXXXXXX
               </p>
             </div>
             <div
@@ -171,7 +171,7 @@ function Header() {
                   <img src={Secure} alt="Secure" />
                 </div>
                 <p>
-                  Presenting UAE’s First Digital Loyalty Program in Retail
+                  Presenting India’s First Digital Loyalty Program in Retail
                   Pharmacies{" "}
                 </p>
               </div>

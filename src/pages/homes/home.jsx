@@ -50,7 +50,7 @@ function Home() {
             <div className="homeBanner_card_text">
               <h4>Own A Franchise</h4>
               <h3>
-                Click here to become a part of UAE's leading Pharmacy chain
+                Click here to become a part of India's leading Pharmacy chain
               </h3>
             </div>
             <div className="homeBanner_card_img">
@@ -73,7 +73,7 @@ function Home() {
           <PriTitle
             title={"PRODUCT CATEGORIES"}
             subTitle={"The Best Care, Every Step Of The Way"}
-            details={`Offering an entire gamut of curative, nutritive, baby care, lifestyle, wellness, fitness, beauty, personal care, homecare products & more coupled with caring & professional health advisory - Aster Pharmacy is a household name & a brand of choice in the UAE.`}
+            details={`Offering an entire gamut of curative, nutritive, baby care, lifestyle, wellness, fitness, beauty, personal care, homecare products & more coupled with caring & professional health advisory - Green Delta Assist is a household name & a brand of choice in the India.`}
           
           />
           <div className="categories_section">

@@ -171,7 +171,7 @@ function Header() {
                   <img src={Secure} alt="Secure" />
                 </div>
                 <p>
-                  Presenting UAE’s First Digital Loyalty Program in Retail
+                  Presenting India’s First Digital Loyalty Program in Retail
                   Pharmacies{" "}
                 </p>
               </div>

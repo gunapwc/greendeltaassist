@@ -14,7 +14,7 @@ const Outlets = () => {
           <PriTitle
             title={"OUR RETAIL OUTLETS"}
             subTitle={"Professional Service & Care In A Pleasant Ambience"}
-            details={`With a growing network of over 200 pharmacies, we are committed to bring reliable & quality healthcare closer to our consumers with an Aster pharmacy in every neighbourhood & the services of a knowledgeable Aster pharmacist available 24/7 for every household. outtlets `}
+            details={`With a growing network of over 200 pharmacies, we are committed to bring reliable & quality healthcare closer to our consumers with an Green Delta Assist in every neighbourhood & the services of a knowledgeable Green Delta Assist available 24/7 for every household. outtlets `}
         
           />
           </div>

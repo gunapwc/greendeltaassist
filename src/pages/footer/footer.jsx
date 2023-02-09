@@ -112,10 +112,10 @@ function Footer() {
                 <img src={Location} alt="Location" />
               </div>
               <div className="info_location_text">
-                <p>Aster Pharmacies Group LLC </p>
+                <p>Green Delta Assist </p>
                 <p>
                   3rd Floor, A Block, Al Hudaiba Awards Building, Jumeirah Road,
-                  Dubai, UAE
+                  Dubai, India
                 </p>
               </div>
             </div>
@@ -165,7 +165,7 @@ function Footer() {
                   <div className="main_section_main_news_date">
                     <p>3 APR 2019</p>
                     <p>
-                      Aster Pharmacy wins the Dubai <br />
+                      Green Delta Assist wins the Dubai <br />
                       Service Excellence Awards under the
                       <br />
                       Health &amp; Wellness Sector.
@@ -179,7 +179,7 @@ function Footer() {
                   <div className="main_section_main_news_date">
                     <p>3 APR 2019</p>
                     <p>
-                      Aster Pharmacy wins the Dubai <br />
+                      Green Delta Assist wins the Dubai <br />
                       Service Excellence Awards under the
                       <br />
                       Health &amp; Wellness Sector.
@@ -219,16 +219,16 @@ function Footer() {
             </ul>
             <div className="main_section_sub_footer">
               <div>
-                <img src={AsterPath} alt="AsterNli" />
+                {/* <img src={AsterPath} alt="AsterNli" /> */}
               </div>
 
               <div></div>
               <div>
-                <img src={AsterNli} alt="AsterNli" />
+                {/* <img src={AsterNli} alt="AsterNli" /> */}
               </div>
               <div>
                 <p>
-                  MOH License Number - Y91IAI04-120722 © 2023 Aster Pharmacy.
+                  MOH License Number - Y91IAI04-120722 © 2023 Green Delta Assist.
                   All rights reserved.
                 </p>
               </div>

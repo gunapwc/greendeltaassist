@@ -17,11 +17,11 @@ const StoreLocator = () => {
       <div className='location'>
       <div className='location_List'>
         <div className='location_List_header'>
-          <h2>Aster Pharmacy 122</h2>
+          <h2>Green Delta Assist 122</h2>
           <ReactSVG className='svg_part' src={Time}/>
         </div>
         <div className='location_List_add'>
-          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Aster Building, Abu Shagara, Sharjah</p></div>
+          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Green Delta Assist Building, Abu Shagara, Sharjah</p></div>
           <ReactSVG className='svg_part' src={Watch}/>
         </div>
         <div className='location_List_time'><ReactSVG className='svg_part' src={Locationgreen}/><p>All Days : 9:00 AM - 12:00 AM Friday: 9:00 AM - 12:00 PM / 2:00 PM - 11:00 PM</p></div>
@@ -33,11 +33,11 @@ const StoreLocator = () => {
        </div>
        <div className='location_List'>
         <div className='location_List_header'>
-          <h2>Aster Pharmacy 122</h2>
+          <h2>Green Delta Assist 122</h2>
           <ReactSVG className='svg_part' src={Time}/>
         </div>
         <div className='location_List_add'>
-          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Aster Building, Abu Shagara, Sharjah</p></div>
+          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Green Delta Assist Building, Abu Shagara, Sharjah</p></div>
           <ReactSVG className='svg_part' src={Watch}/>
         </div>
         <div className='location_List_time'><ReactSVG className='svg_part' src={Locationgreen}/><p>All Days : 9:00 AM - 12:00 AM Friday: 9:00 AM - 12:00 PM / 2:00 PM - 11:00 PM</p></div>
@@ -49,11 +49,11 @@ const StoreLocator = () => {
        </div>
        <div className='location_List'>
         <div className='location_List_header'>
-          <h2>Aster Pharmacy 122</h2>
+          <h2>Green Delta Assist 122</h2>
           <ReactSVG className='svg_part' src={Time}/>
         </div>
         <div className='location_List_add'>
-          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Aster Building, Abu Shagara, Sharjah</p></div>
+          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Green Delta Assist Building, Abu Shagara, Sharjah</p></div>
           <ReactSVG className='svg_part' src={Watch}/>
         </div>
         <div className='location_List_time'><ReactSVG className='svg_part' src={Locationgreen}/><p>All Days : 9:00 AM - 12:00 AM Friday: 9:00 AM - 12:00 PM / 2:00 PM - 11:00 PM</p></div>
@@ -65,11 +65,11 @@ const StoreLocator = () => {
        </div>
        <div className='location_List'>
         <div className='location_List_header'>
-          <h2>Aster Pharmacy 122</h2>
+          <h2>Green Delta Assist 122</h2>
           <ReactSVG className='svg_part' src={Time}/>
         </div>
         <div className='location_List_add'>
-          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Aster Building, Abu Shagara, Sharjah</p></div>
+          <div className='location_List_add_inner'><ReactSVG className='svg_part' src={Shipping}/> <p>Shop no. 2, Green Delta Assist Building, Abu Shagara, Sharjah</p></div>
           <ReactSVG className='svg_part' src={Watch}/>
         </div>
         <div className='location_List_time'><ReactSVG className='svg_part' src={Locationgreen}/><p>All Days : 9:00 AM - 12:00 AM Friday: 9:00 AM - 12:00 PM / 2:00 PM - 11:00 PM</p></div>
