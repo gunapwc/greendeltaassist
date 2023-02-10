@@ -1,0 +1,64 @@
+/* default styles for extension "tx_frontend" */
+
+.store-locator{
+   
+    margin-left: 15%;
+    margin-right: 15%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation{
+    label{
+        color: #164D92;
+    }
+    align-self: flex-start;
+}
+.button-div{
+    display: flex;
+    justify-content: center!important;
+  }
+  .button{
+    display: inline-block;
+    font-family: "LatoRegular", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    border-radius: 19px;
+    padding: 10px 55px;
+    letter-spacing: 1px;
+    border: 2px solid #00B48D;
+    color: #164D92;
+    line-height: 17px;
+    background: #FFFFFF;
+  }
+  .content-div{
+    h1{
+      color: #164D92;
+    }
+    h5{
+        color:#00B48D;
+    }
+    
+  }
+  .network-box{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .tile{
+    display: block;
+    width: 20%;
+    height: 25vh;
+    margin: 3%;
+    padding: 5%;
+    background-color: #164D92;
+    border-radius: 15%;
+    p{
+      color: #FFFFFF;
+    }
+    h1{
+      color: #00B48D;
+    }
+  }

@@ -5,10 +5,13 @@ import Header from '../component/header/header';
 import Footer from '../pages/footer/footer';
 import Partner from '../pages/partner/partner';
 import BlogMain from '../pages/blogMain/BlogMain'
+// import StoreLocator from '../pages/storeLocator/StoreLocator'
 import Blog from '../pages/blog/Blog'
-import StoreLocator from '../pages/storeLocator/StoreLocator'
 import Home from '../pages/homes/home'
+import OurServices from '../pages/ourservices/OurServices';
+import StoreLocator from '../pages/store locator/storeLocator';
 import ProductCategories from '../pages/productCategories/ProductCategories'
+import NewsRoom from '../pages/newsroom/newsroom';
 
 
 function Navigate() {
@@ -24,7 +27,10 @@ function Navigate() {
         <Route path='/blog' element={<Blog/>}/>  
         <Route path='/product-categories' element={<ProductCategories/>}/>
         <Route path='/store-locator' element={<StoreLocator/>}/>
+        <Route path='/our-services' element={<OurServices/>}/>
+        <Route path='/newsroom' element={<NewsRoom/>}/>
     </Routes>
+
     <div style={{height:"100px"}}></div> 
     <Footer/>
     </BrowserRouter>
