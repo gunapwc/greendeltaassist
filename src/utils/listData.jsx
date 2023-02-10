@@ -93,7 +93,7 @@ export const productList = [
       id:10,
       product:"EYE HEALTH",
     //   productImage:EyeHealth2,
-      productTitle:"Towards a Healthy Vision with Aster Pharmacy",
+      productTitle:"Towards a Healthy Vision with Green Delta Assist",
       productDetails:"Yes, we have heard that the eyes are the mirrors to our souls, but did you know that our little eyes also reflect our body’s health? ",
       productLike:0,
       productExpierDate:"June 16, 2021"
@@ -133,8 +133,8 @@ export const productList = [
       id:14,
       product:"Fitness & Nutrition",
     //   productImage:FitnessNutrition2,
-      productTitle:"Get ready for summer with Aster Pharmacy’s weight loss solutions!",
-      productDetails:"Get ready for summer with Aster Pharmacy’s weight loss solutions Looking good and feeling great should be a milestone you achieve this summer. Get ready to hit the beach and have fun swimming in the water. The best part is you don’t have to shop around for healthy weight loss solutions. Simply head to Aster Pharmacy that has customised weight loss solutions to suit all budgets and body types.",
+      productTitle:"Get ready for summer with Green Delta Assist’s weight loss solutions!",
+      productDetails:"Get ready for summer with Green Delta Assist’s weight loss solutions Looking good and feeling great should be a milestone you achieve this summer. Get ready to hit the beach and have fun swimming in the water. The best part is you don’t have to shop around for healthy weight loss solutions. Simply head to Green Delta Assist that has customised weight loss solutions to suit all budgets and body types.",
       productLike:0,
       productExpierDate:"April 25, 2022"
 
@@ -233,8 +233,8 @@ export const productList = [
       id:24,
       product:"Sleep & Brain Health",
     //   productImage:SleepBrainHealth2,
-      productTitle:"The Essentials for a Good Sleep: From Aster Pharmacy",
-      productDetails:"‘’Sleep is the Golden Chain That Ties Body & Health Together’’ -And Aster Pharmacy completely agrees with this statement & more, that sleep solves everything! In fact, a well-rested body means a productive day ahead (for literally anyone!).",
+      productTitle:"The Essentials for a Good Sleep: From Green Delta Assist",
+      productDetails:"‘’Sleep is the Golden Chain That Ties Body & Health Together’’ -And Green Delta Assist completely agrees with this statement & more, that sleep solves everything! In fact, a well-rested body means a productive day ahead (for literally anyone!).",
       productLike:0,
       productExpierDate:"June 13, 2021"
 
@@ -253,8 +253,8 @@ export const productList = [
       id:26,
       product:"Mother & Child Healthcare",
     //   productImage:MotherChildHealthcare2,
-      productTitle:"Have Healthy Start to School with Aster Pharmacy!",
-      productDetails:"It’s hello to yet another amazing school year & yes, we perfectly understand about that butterflies-in-the-stomach feeling! Aster Pharmacy recommends its top products to prioritize good health & wellbeing for your little ones. Read on below to know more... ",
+      productTitle:"Have Healthy Start to School with Green Delta Assist!",
+      productDetails:"It’s hello to yet another amazing school year & yes, we perfectly understand about that butterflies-in-the-stomach feeling! Green Delta Assist recommends its top products to prioritize good health & wellbeing for your little ones. Read on below to know more... ",
       productLike:0,
       productExpierDate:"August 24, 2021"
 

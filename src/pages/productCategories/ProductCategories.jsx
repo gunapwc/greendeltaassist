@@ -11,7 +11,7 @@ const ProductCategories = () => {
   return (
     <>
   <div className="container">
-  <Banner  img ={AboutBanner} title={"ABOUT ASTER PHARMACY"}text={"Exceeding Expectations, Offering Much More Than Medicines"} />
+  <Banner  img ={AboutBanner} title={"ABOUT Green Delta Assist"}text={"Exceeding Expectations, Offering Much More Than Medicines"} />
   <div className="inner-container">
   <PriTitle 
   title={"OUR PHILOSOPHY"}

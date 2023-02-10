@@ -98,6 +98,7 @@ import Locationgreen from "../asset/image/location-green.svg";
 import Setting from "../asset/image/setting.svg";
 import Time from "../asset/image/time.svg";
 import Watch from "../asset/image/watch.svg";
+import BlogImage from "../asset/image/blog.jpg"
 
 export {
   Logo,
@@ -184,5 +185,6 @@ export {
   Outlet3,
   PopularImg1,
   Watch,
-  Time,Setting,Locationgreen,Shipping,Callgreen
+  Time,Setting,Locationgreen,Shipping,Callgreen,
+  BlogImage
 };

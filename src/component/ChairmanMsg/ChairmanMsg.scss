@@ -2,7 +2,9 @@
 
 .chaimanMsg{
     margin: 3vw 0;
-    background-image: url(../../asset/image/chairman_01.png);
+    background: linear-gradient(45deg,
+    rgba(31, 22, 22, 0.75),
+    rgba(38, 40, 43, 0.75)), url(../../asset/image/chairman_01.png);
     background-position: right top;
     background-repeat: no-repeat;
     background-size: cover;

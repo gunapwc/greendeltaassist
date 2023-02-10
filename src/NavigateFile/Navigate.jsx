@@ -6,6 +6,7 @@ import Footer from '../pages/footer/footer';
 import Partner from '../pages/partner/partner';
 import BlogMain from '../pages/blogMain/BlogMain'
 // import StoreLocator from '../pages/storeLocator/StoreLocator'
+import Blog from '../pages/blog/Blog'
 import Home from '../pages/homes/home'
 import OurServices from '../pages/ourservices/OurServices';
 import StoreLocator from '../pages/store locator/storeLocator';
@@ -23,9 +24,10 @@ function Navigate() {
         <Route path='/about-Us' element={<About/>}/>
         <Route path='/partner' element={<Partner/>}/>
         <Route path='/blog-main' element={<BlogMain/>}/>  
+        <Route path='/blog' element={<Blog/>}/>  
         <Route path='/product-categories' element={<ProductCategories/>}/>
         <Route path='/store-locator' element={<StoreLocator/>}/>
-        <Route path='/Our Services' element={<OurServices/>}/>
+        <Route path='/our-services' element={<OurServices/>}/>
         <Route path='/newsroom' element={<NewsRoom/>}/>
     </Routes>
 

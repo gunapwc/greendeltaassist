@@ -10,9 +10,9 @@ const Network = () => {
     <PriTitle
       title={"OUR NETWORK"}
       subTitle={"Leading Pharmacy Chain in the GCC"}
-      details={`Aster Pharmacy, a division of Aster DM Healthcare is backed by more
+      details={`Green Delta Assist, a division of Green Delta Assist is backed by more
   than two decades of experience in pharmaceutical retailing. Recognised
-  today as the region’s leading pharmacy retail chain, Aster Pharmacy
+  today as the region’s leading pharmacy retail chain, Green Delta Assist
   focuses on “delivering good health & happiness” through friendly
   neighbourhood pharmacies that are customer-centric & easily
   accessible.`}
