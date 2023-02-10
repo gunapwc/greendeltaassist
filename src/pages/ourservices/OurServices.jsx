@@ -91,7 +91,7 @@ detail={true}
             <p className="mdisplay">The Home delivery services bring healthcare to the convenience of your home. 800-700-600 - a dedicated call centre enables customers to access over 700+ multilingual pharmacists who counsel &amp; provide medical assistance 24/7 &amp; free home delivery.</p>
             <div className="service-cards ">
               <div className="card-left">
-                <img src={OurServices3} style={{width:"100%"}}/>
+                <img src={OurServices3} style={{width:"100%", height:"100%"}}/>
               </div>
               <div className="card-right">
                 <div className="content">
@@ -128,7 +128,7 @@ detail={true}
             <p className="mdisplay">By introducing Aster Online, Aster Pharmacy becomes the first pharmacy in the UAE to go online - one of the many firsts in the healthcare &amp; wellness space that Aster is known for over the years.</p>
             <div className="service-cards">
               <div className="card-left">
-                <img src={OurServices2} style={{width:"100%"}}/>
+                <img src={OurServices2} style={{width:"100%", height:"100%"}}/>
               </div>
               <div className="card-right">
                 <div className="content">
@@ -160,7 +160,7 @@ detail={true}
             <p className="mdisplay">The Aster Secure Loyalty Programme is UAES&#039;s 1st pharmacy rewards Programme. Great savings &amp; amazing rewards is the way to go with Aster Secure!</p>
             <div className="service-cards">
               <div className="card-left" >
-              <img src={OurServices1} style={{width:"100%"}}/>
+              <img src={OurServices1} style={{width:"100%", height:"100%"}}/>
               </div>
               <div className="card-right">
                 <div className="content">
@@ -192,12 +192,12 @@ detail={true}
               <p className="mdisplay">From cardiologists & endocrinologists to obstetricians & paediatricians, Aster’s new teleconsultation service allows people to remotely consult qualified and specialist doctors across 30 specialties.</p>
               <div className="service-cards">
                 <div className="card-left">
-                <img src={OurServices5} style={{width:"100%"}}/>
+                <img src={OurServices5} style={{width:"100%", height:"100%"}}/>
                 </div>
                 <div className="card-right">
                   <div className="content1">
                     <div className="bottom">
-                      <div className="row">
+                      <div className="row1">
                         <div className="psecd">
                           <h3 className="service-title">Teleconsultation</h3>
                           <p style={{visibility: "hidden"}}>Consult your doctor while you stay safe at home</p>
@@ -220,9 +220,6 @@ detail={true}
           </div>
         </div>
       </div>
-      <a className="btom-top-scroll" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50" href="https://wa.me/+971800700600?text=Hello">
-        <img alt="aster-hospital" src={Whatsapp} style={{width: "50px"}} />
-      </a>
       
     </>
   )
