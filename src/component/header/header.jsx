@@ -40,8 +40,8 @@ function Header() {
       },
       {
         id: 5,
-        listItem: "Careers",
-        link: "careers",
+        listItem: "Blog",
+        link: "blog-main",
       },
     ],
     [
@@ -67,8 +67,8 @@ function Header() {
       },
       {
         id: 5,
-        listItem: "Careers",
-        link: "careers",
+        listItem: "Blog",
+        link: "blog-main",
       },
     ],
     [
@@ -94,8 +94,8 @@ function Header() {
       },
       {
         id: 5,
-        listItem: "Careers",
-        link: "careers",
+        listItem: "Blog",
+        link: "blog-main",
       },
     ],
   ];
