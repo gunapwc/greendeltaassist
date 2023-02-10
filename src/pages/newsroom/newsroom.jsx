@@ -14,10 +14,10 @@ const NewsRoom = () => {
         <NewsRoomCard image={img1} date="January 02, 2023" category="Health" title="Enhance your beauty & improve joint health with Country Life Maxi- Collagen C&A+ Biotin Powder" />
     </div>));
     const onLoadMore = () => {
-        let a = loadMore+(<div className='grid-news'>
+        let a = <>{loadMore}<div className='grid-news'>
             <NewsRoomCard image={img1} date="January 02, 2023" category="Health" title="Enhance your beauty & improve joint health with Country Life Maxi- Collagen C&A+ Biotin Powder" />
             <NewsRoomCard image={img1} date="January 02, 2023" category="Health" title="Enhance your beauty & improve joint health with Country Life Maxi- Collagen C&A+ Biotin Powder" />
-        </div>)
+        </div></>
         setLoadMore(a);
 
     };

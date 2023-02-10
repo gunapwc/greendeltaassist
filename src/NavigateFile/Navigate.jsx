@@ -5,11 +5,11 @@ import Header from '../component/header/header';
 import Footer from '../pages/footer/footer';
 import Partner from '../pages/partner/partner';
 import BlogMain from '../pages/blogMain/BlogMain'
-// import StoreLocator from '../pages/storeLocator/StoreLocator'
+import StoreLocator from '../pages/storeLocator/StoreLocator'
 import Blog from '../pages/blog/Blog'
 import Home from '../pages/homes/home'
 import OurServices from '../pages/ourservices/OurServices';
-import StoreLocator from '../pages/store locator/storeLocator';
+// import StoreLocator from '../pages/store locator/storeLocator';
 import ProductCategories from '../pages/productCategories/ProductCategories'
 import NewsRoom from '../pages/newsroom/newsroom';
 
