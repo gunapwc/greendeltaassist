@@ -1,12 +1,8 @@
 import React from 'react'
 import Banner from '../../component/banner/Banner'
-import Header from '../../component/header/header'
-import OurServices from '../../component/ourservices/OurServices'
 import Outlets from '../../component/outlets/Outlets'
-import Footer from '../footer/footer'
 import {AboutBanner,Emg24} from "../../utils/images";
 import PriTitle from '../../component/innerSection/PriTitle'
-import { ReactSVG } from "react-svg";
 import OurValues from '../../component/0urValues/OurValues'
 import "./about.scss"
 import ChairmanMsg from '../../component/ChairmanMsg/ChairmanMsg'

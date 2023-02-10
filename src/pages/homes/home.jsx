@@ -41,7 +41,7 @@ function Home() {
             <video autoPlay>
               <source src={Video} type="video/mp4" />
             </video>
-            <div class="homeBanner_vedio_text">
+            <div className="homeBanner_vedio_text">
               <h4>ABOUT US</h4>
               <h3>Spreading Good Health &amp; Happiness</h3>
             </div>
