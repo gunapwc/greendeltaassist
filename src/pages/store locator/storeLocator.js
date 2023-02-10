@@ -92,7 +92,8 @@ function StoreLocator() {
                                 if (e === value.city) {
                                     return (
                                         <li>
-                                            {parseHTML(value.address)}
+                                           <div dangerouslySetInnerHTML={{__html:value.address}}>
+                                    </div>
                                         </li>
                                     )
                                 }
@@ -101,8 +102,7 @@ function StoreLocator() {
                         else {
                             return (
                                 <li>
-                                    <div>
-                                        {value.address}
+                                    <div dangerouslySetInnerHTML={{__html:value.address}}>
                                     </div>
                                 </li>
                             )
