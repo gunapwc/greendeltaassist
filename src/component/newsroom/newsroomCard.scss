@@ -1,12 +1,9 @@
 .Newsroom_card {
-    width: 250px;
-    margin: 30px;
+    width: auto;
+    margin: 10px;
+    overflow: hidden;
     background-color: #e4e2e2;
-    border-radius: 5%;
-    img{
-        border-top: #e4e2e2;
-        border-radius: 10%;
-    }
+    border-radius: 20px;
 
 }
 .Newsroom_Banner{
@@ -53,7 +50,7 @@
 .Newsroom_card_inner {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    padding: 10px;
 
     button {
         font-size: "12px";
