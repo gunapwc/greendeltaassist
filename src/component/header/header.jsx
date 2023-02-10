@@ -126,7 +126,9 @@ function Header() {
       <header>
         <div className="container">
           <div className="logo">
+          <Link to={'/'}>
             <img src={Logo} alt="logo" />
+            </Link>
           </div>
 
           <ul className="navList">
