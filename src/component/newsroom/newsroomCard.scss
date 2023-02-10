@@ -10,15 +10,17 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    border-radius: 15%;
+    border-radius: 20px;
     border: #FFFFFF;
+    overflow: hidden;
     
 }
 .Newsroom_Banner_img{
     width: 65%;
+    height: 330px;
 }
 .Newsroom_Banner_inner {
-    height: 294px;
+    height: 330px;
     
     justify-content: center;
     width:35%;

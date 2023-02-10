@@ -26,7 +26,7 @@ const NewsRoomBanner = (props) => {
     return (
         <div className='Newsroom_Banner'>
             <div className='Newsroom_Banner_img'>
-                <img src={props.image} width="100%"/>
+                <img src={props.image} width="100%" height="100%"/>
             </div>
             <div className='Newsroom_Banner_inner'>
                 <button>{props.category}</button>
