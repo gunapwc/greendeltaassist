@@ -1,6 +1,8 @@
 import './partner.scss';
 import img1 from "./partner.jpg.pagespeed.ic.PaL5pYEgPq.webp"
 import home from "./home-svgrepo-com.svg"
+import Banner from '../../component/banner/Banner';
+
 // import Menu from '@mui/material/Menu';
 // import MenuItem from '@mui/material/MenuItem';
 
@@ -9,7 +11,7 @@ function Partner() {
         <div className="partner">
             {/* <Header /> */}
             {/* <div className="header-align"></div>add this with header */}
-            <div className="bannerp">
+            {/* <div className="bannerp">
                 <div className="banner-text">
                     <h3>
                         Partner With Us <br />
@@ -21,7 +23,10 @@ function Partner() {
                 <div className="banner-img">
                     <img src={img1}></img>
                 </div>
-            </div>
+            </div> */}
+            <div className='container'>
+              <Banner img ={img1} title={"Partner With Us"}text={"Quality Health Care Within Reach"}/>
+              </div>
             <div className="content-div" style={{ margin: "0% 15% 0% 15%" }}>
 
                 <br />
