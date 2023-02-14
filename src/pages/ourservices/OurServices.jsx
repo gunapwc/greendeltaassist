@@ -95,11 +95,11 @@ detail={true}
               </div>
               <div className="card-right">
                 <div className="content">
-                  <div className="top">
+                  <div className="bottom">
+                  <div className="row">
                     <img src={OurServices6}/>
                     <p>800 700 600</p>
                   </div>
-                  <div className="bottom">
                     <div className="row">
                       <img src={OurServices7} />
                       <p>Get Free Home Delivery</p>

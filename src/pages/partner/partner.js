@@ -27,7 +27,7 @@ function Partner() {
             <div className='container'>
               <Banner img ={img1} title={"Partner With Us"}text={"Quality Health Care Within Reach"}/>
               </div>
-            <div className="content-div" style={{ margin: "0% 15% 0% 15%" }}>
+            <div className="content-div container">
 
                 <br />
                 <br />
@@ -60,6 +60,7 @@ function Partner() {
                 <br />
                 <div className='button-div'>
                     <button className='button'>SUPPLIER REGISTRATION</button>
+                    <div style={{width:"40px"}}></div>
                     <button className='button'>EXISTING SUPPLIER</button>
                 </div>
             </div>
