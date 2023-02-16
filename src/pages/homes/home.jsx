@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {Button} from "../../component/button/button";
 import PriTitle from "../../component/innerSection/PriTitle";
 import Network from "../../component/network/Network";
@@ -21,18 +21,28 @@ import {
   HealthcareTips4,
   CareBrands1,CareBrands2,CareBrands3,CareBrands4,CareBrands5,CareBrands6,CareBrands7
 } from "../../utils/images";
-import Footer from "../footer/footer";
 import "./home.scss";
 import { useQuery } from '@apollo/client';
 import ABOUT_US_VIDEO from "../../gql/query_about_us_video.graphql";
-
+import TEST from "../../gql/query_test";
+import { usePostAxios} from "../../utils/apiAxios"
 
 
 function Home() {
 
   const { loading, error, data } = useQuery(ABOUT_US_VIDEO);
 
+  //const about = usePostAxios(TEST,[]);
 
+  const [aboutVideo, setAboutVideo]= React.useState('');
+  React.useEffect(()=>{
+    console.log(data)
+
+    if(data?.cmsBlocks?.items[0]?.content){
+    setAboutVideo(data?.cmsBlocks?.items[0])
+    }
+  
+  },[data])
   return (
     <>
       <div className=" container">
@@ -42,7 +52,7 @@ function Home() {
               <source src={Video} type="video/mp4" />
             </video>
             <div className="homeBanner_vedio_text">
-              <h4>ABOUT US</h4>
+              <h4>{aboutVideo?.title}</h4>
               <h3>Spreading Good Health &amp; Happiness</h3>
             </div>
           </div>

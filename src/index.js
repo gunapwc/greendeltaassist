@@ -3,13 +3,52 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider,concat,HttpLink,ApolloLink } from '@apollo/client';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// const uri = 'https://countries.trevorblades.com/graphql';
+// const uri = 'https://pwcdemo.eastus.cloudapp.azure.com/magentodefault/graphql';
+// const uri = 'http://magecommerce.eastus.cloudapp.azure.com/graphql';
+const uri = '/api';
+
+const defaultOptions = {
+  watchQuery: {
+    fetchPolicy: 'cache-and-network',
+    errorPolicy: 'ignore',
+  },
+  query: {
+    fetchPolicy: 'network-only',
+    errorPolicy: 'all',
+  },
+  mutate: {
+    errorPolicy: 'all',
+  },
+};
+
+const authMiddleware = new ApolloLink((operation, forward) => {
+  // add the authorization to the headers
+  operation.setContext(({ headers = {} }) => ({
+    headers: {
+      ...headers,
+    }
+  }));
+
+  return forward(operation);
+})
+const httpLink = new HttpLink({
+      uri: uri,
+      headers: {
+        "Content-Type": "application/json",
+      },
+  });
+
+
 const client = new ApolloClient({
-  uri: 'https://pwcdemo.eastus.cloudapp.azure.com/magentodefault/graphql',
+  link: concat(authMiddleware, httpLink),
   cache: new InMemoryCache(),
+  defaultOptions : defaultOptions,
+  
 });
 
 root.render(
