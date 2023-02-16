@@ -33,23 +33,28 @@ function Home() {
   const { loading, error, data } = useQuery(ABOUT_US_VIDEO);
 
   //const about = usePostAxios(TEST,[]);
+  const videoRef = React.useRef();
 
   const [aboutVideo, setAboutVideo]= React.useState('');
   React.useEffect(()=>{
     console.log(data)
 
-    if(data?.cmsBlocks?.items[0]?.content){
+    if(data?.cmsBlocks?.items[0]){
     setAboutVideo(data?.cmsBlocks?.items[0])
     }
   
   },[data])
+  useEffect(() => {    
+    videoRef.current?.load();
+  }, [aboutVideo]);
+  
   return (
     <>
       <div className=" container">
         <div className="homeBanner ">
           <div className="homeBanner_vedio">
-            <video autoPlay>
-              <source src={Video} type="video/mp4" />
+            <video autoPlay ref={videoRef}>
+              <source src={aboutVideo.content} type="video/mp4" />
             </video>
             <div className="homeBanner_vedio_text">
               <h4>{aboutVideo?.title}</h4>
