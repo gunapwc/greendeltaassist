@@ -5,7 +5,7 @@ const SimpleSlider = (props) => {
 const {lgslidesToShow,smslidesToShow,center,rows} = props
 const settings = {
   dots: true,
-infinite: true,
+infinite: false,
 centerMode: center?true:false,
 centerPadding: center?center:'0px',
 speed: 300,

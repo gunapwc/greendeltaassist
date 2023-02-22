@@ -26,16 +26,29 @@ import { useQuery } from '@apollo/client';
 import ABOUT_US_VIDEO from "../../gql/query_about_us_video.graphql";
 import TEST from "../../gql/query_test";
 import { usePostAxios} from "../../utils/apiAxios"
+import Brand_List from "../../gql/query_brand_list.graphql";
+import DOMPurify from 'dompurify'; 
+
 
 
 function Home() {
 
+  const data2 = `lorem <b onmouseover="alert('mailicious message');">test</b>`;
+
+  const sanitizedData = () => ({
+    __html: DOMPurify.sanitize(data1)
+  })
+
   const { loading, error, data } = useQuery(ABOUT_US_VIDEO);
+  const { loading:loading1, error:error1, data:data1 } = useQuery(Brand_List);
 
   //const about = usePostAxios(TEST,[]);
   const videoRef = React.useRef();
 
   const [aboutVideo, setAboutVideo]= React.useState('');
+
+  const [brandlist, setbrandlist]= React.useState('');
+  
   React.useEffect(()=>{
     console.log(data)
 
@@ -44,6 +57,16 @@ function Home() {
     }
   
   },[data])
+
+  React.useEffect(()=>{
+    console.log(data1)
+
+    if(data1?.cmsBlocks?.items[0]){
+      setbrandlist(data1?.cmsBlocks?.items[0])
+    }
+  
+  },[data1])
+
   useEffect(() => {    
     videoRef.current?.load();
   }, [aboutVideo]);
@@ -234,11 +257,23 @@ function Home() {
             title={"LEADING HEALTH CARE BRANDS"}
             subTitle={"Unique Portfolio Of Specialised brands"}
           />
-          <SimpleSlider lgslidesToShow={7} smslidesToShow={4}>
-            <div className="careBrands_img">
-              <img src={CareBrands1} alt="" />
-            </div>
-            <div className="careBrands_img">
+         
+         
+
+         
+
+          <SimpleSlider  >
+
+           
+          {/* <div dangerouslySetInnerHTML={{__html:brandlist?.content}}/> */}
+          
+          
+          <div className="careBrands_img">
+
+          <div dangerouslySetInnerHTML={{__html: brandlist.content}}/></div>
+          
+
+            {/* <div className="careBrands_img">
               <img src={CareBrands2} alt="" />
             </div>
             <div className="careBrands_img">
@@ -255,15 +290,18 @@ function Home() {
             </div>
             <div className="careBrands_img">
               <img src={CareBrands7} alt="" />
-            </div>
+            </div> */}
+
           </SimpleSlider>
+
           <div className="button_section">
             {" "}
             <Button text={"VIEW MORE BRANDS"} />
-          </div>
+
         </div>
 
 
+    </div>
       </div>
       <Outlets/>
 
