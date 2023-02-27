@@ -56,8 +56,6 @@ function Home() {
   }, [data]);
 
   React.useEffect(() => {
-    console.log(data1);
-
     if (data1?.cmsBlocks?.items[0]) {
       setbrandlist(data1?.cmsBlocks?.items[0]);
     }
