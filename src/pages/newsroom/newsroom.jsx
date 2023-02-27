@@ -31,6 +31,7 @@ const NewsRoom = () => {
         })}
     </div>))
     },[content])
+    
     const [gridIndex,setGridIndex] = useState(4)
     const onLoadMore = () => {
         let a = <>{loadMore}<div className='grid-news'>
