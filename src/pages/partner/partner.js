@@ -2,32 +2,47 @@ import './partner.scss';
 import img1 from "./partner.jpg.pagespeed.ic.PaL5pYEgPq.webp"
 import home from "./home-svgrepo-com.svg"
 import Banner from '../../component/banner/Banner';
+import { useQuery, gql } from '@apollo/client';
+import queryPartner from '../../gql/query_partner';
+import { useEffect, useState } from 'react';
 
 // import Menu from '@mui/material/Menu';
 // import MenuItem from '@mui/material/MenuItem';
 
 function Partner() {
+    const { loading, error, data } = useQuery(queryPartner);
+    console.log(data);
+    const [content,setContent] = useState();
+    useEffect(()=>{
+            if(data){
+                setContent(data.cmsBlocks.items[0].content);
+            }
+    },[data])
     return (
+        <>
+       
+       
         <div className="partner">
             {/* <Header /> */}
             {/* <div className="header-align"></div>add this with header */}
             {/* <div className="bannerp">
                 <div className="banner-text">
-                    <h3>
-                        Partner With Us <br />
-                    </h3>
-                    <h2>
-                        Quality Health Care<br /> Within Reach
-                    </h2>
+                <h3>
+                Partner With Us <br />
+                </h3>
+                <h2>
+                Quality Health Care<br /> Within Reach
+                </h2>
                 </div>
                 <div className="banner-img">
-                    <img src={img1}></img>
+                <img src={img1}></img>
                 </div>
             </div> */}
             <div className='container'>
               <Banner img ={img1} title={"Partner With Us"}text={"Quality Health Care Within Reach"}/>
               </div>
-            <div className="content-div container">
+            <div className='container' dangerouslySetInnerHTML={{__html:content}}></div>
+            {/* <div className="content-div container">
 
                 <br />
                 <br />
@@ -63,8 +78,9 @@ function Partner() {
                     <div style={{width:"40px"}}></div>
                     <button className='button'>EXISTING SUPPLIER</button>
                 </div>
-            </div>
+            </div> */}
         </div>
+            </>
     );
 }
 

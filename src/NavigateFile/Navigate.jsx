@@ -12,6 +12,7 @@ import OurServices from '../pages/ourservices/OurServices';
 // import StoreLocator from '../pages/store locator/storeLocator';
 import ProductCategories from '../pages/productCategories/ProductCategories'
 import NewsRoom from '../pages/newsroom/newsroom';
+import News from '../pages/news/news';
 
 
 function Navigate() {
@@ -29,6 +30,9 @@ function Navigate() {
         <Route path='/store-locator' element={<StoreLocator/>}/>
         <Route path='/our-services' element={<OurServices/>}/>
         <Route path='/newsroom' element={<NewsRoom/>}/>
+        <Route path='/news'>
+          <Route path = ':id' element={<News/>}/>
+        </Route>
     </Routes>
 
     <div style={{height:"100px"}}></div> 
