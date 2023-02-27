@@ -20,13 +20,17 @@ const NewsRoom = () => {
         }
     }, [data]
     );
-    const [loadMore, setLoadMore] = useState((<div className='grid-news'>
+    const [loadMore, setLoadMore] = useState();
+    useEffect(()=>{
+        setLoadMore((<div className='grid-news'>
         {content.map((value, index) => {
             if (index > 2 && index < 5  ) {
                 return <NewsRoomCard key={index} image={value.thumb_image_full_path} date={value.created_at} category={value.category_name} title={value.news_title} click={() => { onclickCard(value.news_id) }} />
             }
         })}
-    </div>));
+    </div>))
+    },[content])
+    
     const [gridIndex,setGridIndex] = useState(4)
     const onLoadMore = () => {
         let a = <>{loadMore}<div className='grid-news'>
