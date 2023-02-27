@@ -1,11 +1,3 @@
-.Newsroom_card {
-    width: auto;
-    margin: 10px;
-    overflow: hidden;
-    background-color: #e4e2e2;
-    border-radius: 20px;
-
-}
 .Newsroom_Banner{
     width: 100%;
     display: flex;
@@ -29,10 +21,10 @@
     background-color: #00b48d;
     flex-direction: column;
     color: #FFFFFF;
-
+    
     button {
         font-size: "12px";
-        width: 100px;
+        width: max-content;
         padding: 3px 15px;
         margin-bottom: 4px;
         background-color: #00b48d;
@@ -45,18 +37,31 @@
 
     h1 {
         font-size: medium;
-
+        
     }
 }
 
+.Newsroom_card {
+    width: 100%;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #e4e2e2;
+    border-radius: 20px;
+    div{
+        img{
+            height: 350px;
+        }
+    }
+
+}
 .Newsroom_card_inner {
     display: flex;
     flex-direction: column;
     padding: 10px;
-
+    
     button {
         font-size: "12px";
-        width: 100px;
+        width: max-content;
         padding: 3px 15px;
         margin-bottom: 4px;
         background-color: #00b48d;

@@ -10,35 +10,35 @@ const options = {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': "*"
     }
-   };
+};
 
-export const useGetAxios = async (query,variable) => {
-    
+export const useGetAxios = async (query, variable) => {
+
     React.useEffect(() => {
-        
-    axios
-    .get(uri, query )
-    .then(response => {
-       return response.data;
-    }).catch(()=>{ 
-        return [];
-    })
-    },[query]);
-   
-  
+
+        axios
+            .get(uri, query)
+            .then(response => {
+                return response.data;
+            }).catch(() => {
+                return [];
+            })
+    }, [query]);
+
+
     return [];
-  };
+};
 
 
-  export const usePostAxios = async (query,variable) => {
+export const usePostAxios = async (query, variable) => {
     React.useEffect(() => {
         axios
-        .post(uri, {query,variable} )
-        .then(response => {
-           return response.data;
-        }).catch(()=>{ 
-            return [];
-        })
-        },[query,variable,]);
-        return [];
-  };
+            .post(uri, { query, variable })
+            .then(response => {
+                return response.data;
+            }).catch(() => {
+                return [];
+            })
+    }, [query, variable,]);
+    return [];
+};

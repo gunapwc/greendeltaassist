@@ -6,7 +6,7 @@ const NewsRoomCard = (props) => {
 
 
     return (
-        <div className='Newsroom_card'>
+        <div className='Newsroom_card' onClick={props.click}>
             <div >
                 <img src={props.image} width="100%" />
             </div>
