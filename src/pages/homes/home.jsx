@@ -19,16 +19,19 @@ import {
 import "./home.scss";
 import { useQuery } from "@apollo/client";
 import ABOUT_US_VIDEO from "../../gql/query_about_us_video.graphql";
-import TEST from "../../gql/query_test";
-import { usePostAxios } from "../../utils/apiAxios";
 import Brand_List from "../../gql/query_brand_list.graphql";
 import Category_List from "../../gql/query_category_list.graphql";
 import DOMPurify from "dompurify";
+import parse from 'html-react-parser';
 
 function Home() {
-  const sanitizedData = () => ({
-    __html: DOMPurify.sanitize(data1),
-  });
+  const sanitizedData = (htmlString) => {
+    console.log(htmlString);
+    const cleanHtmlString= DOMPurify.sanitize(htmlString
+      ,{ USE_PROFILES: { html: true } });
+      const html = parse(cleanHtmlString);
+        return html;
+  };
 
   const { data } = useQuery(ABOUT_US_VIDEO);
   const {data: data1 } = useQuery(Brand_List);
@@ -263,9 +266,7 @@ function Home() {
           />
 
           <SimpleSlider>
-            <div className="careBrands_img">
-              <div dangerouslySetInnerHTML={{ __html: brandlist.content }} />
-            </div>
+            {sanitizedData(brandlist.content)} 
           </SimpleSlider>
 
           <div className="button_section">
