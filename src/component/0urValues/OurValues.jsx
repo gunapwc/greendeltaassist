@@ -50,7 +50,7 @@ const OurValues = () => {
         {values&&values.map((e)=>{
             
          return(
-            <div className='OurValues_section'>
+            <div key={e.id} className='OurValues_section'>
             <ReactSVG className='OurValues_section_svg' src={e.img}/>
             <div className='OurValues_section_details' >
                 <h6>{e.title}</h6>

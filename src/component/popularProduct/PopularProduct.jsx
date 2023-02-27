@@ -45,9 +45,9 @@ function PopularProduct(props) {
 
         <div className="popularProduct_list">
           <SimpleSlider rows={2}>
-            {productlist?.map((value) => {
+            {productlist?.map((value,i) => {
               return (
-                <div className="popularProduct_list_card">
+                <div key={i} className="popularProduct_list_card">
                   <div className="popularProduct_list_card_img">
                     <img src={value?.thumbnail?.url} alt="" />
                   </div>

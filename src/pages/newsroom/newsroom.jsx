@@ -5,7 +5,7 @@ import img1 from "./partner.jpg.pagespeed.ic.PaL5pYEgPq.webp";
 import { Button } from '../../component/button/button';
 import { useQuery, gql } from '@apollo/client';
 import "./newsroom.scss"
-import queryNewsroom from '../../gql/query_newsroom';
+import News_Room from '../../gql/query_newsroom';
 import { useNavigate } from 'react-router-dom';
 const NewsRoom = () => {
     let Navigate = useNavigate()
@@ -13,18 +13,17 @@ const NewsRoom = () => {
         Navigate(`../news/${id}`);
     };
     const [content, setContent] = useState([]);
-    const { loading, error, data } = useQuery(queryNewsroom(0));
+    const { loading, error, data } = useQuery(News_Room,{variables:{ id:"0"}});
     useEffect(() => {
         if (data) {
             setContent(data.getNewsDatas);
         }
-        console.log(content);
     }, [data]
     );
     const [loadMore, setLoadMore] = useState((<div className='grid-news'>
         {content.map((value, index) => {
             if (index > 2 && index < 5  ) {
-                return <NewsRoomCard image={value.thumb_image_full_path} date={value.created_at} category={value.category_name} title={value.news_title} click={() => { onclickCard(value.news_id) }} />
+                return <NewsRoomCard key={index} image={value.thumb_image_full_path} date={value.created_at} category={value.category_name} title={value.news_title} click={() => { onclickCard(value.news_id) }} />
             }
         })}
     </div>));
@@ -33,7 +32,7 @@ const NewsRoom = () => {
         let a = <>{loadMore}<div className='grid-news'>
             {content.map((value, index) => {
                 if (  index > gridIndex && index < (gridIndex+3))  {
-                    return <NewsRoomCard image={value.thumb_image_full_path} date={value.created_at} category={value.category_name} title={value.news_title} click={() => { onclickCard(value.news_id) }} />
+                    return <NewsRoomCard key={index} image={value.thumb_image_full_path} date={value.created_at} category={value.category_name} title={value.news_title} click={() => { onclickCard(value.news_id) }} />
                 }
             })}
         </div></>
@@ -50,7 +49,7 @@ const NewsRoom = () => {
                 <div className="grid-news">
                     {content.map((value, index) => {
                         if (index < 3) {
-                            return <NewsRoomCard image={value.thumb_image_full_path} date={value.created_at} category={value.category_name} title={value.news_title} click={() => { onclickCard(value.news_id) }} />
+                            return <NewsRoomCard  key={index} image={value.thumb_image_full_path} date={value.created_at} category={value.category_name} title={value.news_title} click={() => { onclickCard(value.news_id) }} />
                         }
                     })}
 

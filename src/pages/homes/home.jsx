@@ -121,9 +121,9 @@ function Home() {
 
           <div className="categories_section">
             <SimpleSlider>
-              {categorylista?.map((value) => {
+              {categorylista?.map((value,i) => {
                 return (
-                  <div className="categories_section_card">
+                  <div key={i} className="categories_section_card">
                     <img src={value.image} alt="" />
                     <div className="categories_section_card_icon">
                       <img src={ProductCategoriesIcon1} alt="" />

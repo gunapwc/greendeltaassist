@@ -113,8 +113,8 @@ function Header() {
               <button>Shop online</button>
             </div>
 
-            {menuList[0].map((e) => (
-              <Link to={e.link}>
+            {menuList[0].map((e,i) => (
+              <Link key={i} to={e.link}>
                 <li>{e.listItem}</li>
               </Link>
             ))}
@@ -145,15 +145,15 @@ function Header() {
       {menuToggle ? (
         <div className="magaMenu">
           <ul>
-            {menuList[1].map((e) => (
-              <Link to={e.link}>
+            {menuList[1].map((e,i) => (
+              <Link key={i} to={e.link}>
                 <li>{e.listItem}</li>
               </Link>
             ))}
           </ul>
           <ul>
-            {menuList[2].map((e) => (
-              <Link to={e.link}>
+            {menuList[2].map((e,i) => (
+              <Link key={i} to={e.link}>
                 <li>{e.listItem}</li>
               </Link>
             ))}

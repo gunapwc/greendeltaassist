@@ -27,9 +27,9 @@ const ProductCategories = () => {
   <PriTitle 
   title={"OUR PHILOSOPHY"}
   details ={"We live by this promise that sums up what we do & why we exist. This is our guiding philosophy in our interactions with patients, doctors, employees & society at large."}/>
-  {categorylist?.categoryList[0]?.children?.map((category) => {
+  {categorylist?.categoryList[0]?.children?.map((category,i) => {
                 return (
-                  <PopularProduct category={category}  category_id={category.category_id} />
+                  <PopularProduct key={i} category={category}  category_id={category.category_id} />
                 );
               })}
  

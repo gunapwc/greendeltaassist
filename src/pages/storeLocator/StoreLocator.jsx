@@ -33,9 +33,9 @@ function StoreLocator() {
         <StoreFilter />
 
         <div className="location">
-          {aboutVideo.map((value) => {
+          {aboutVideo.map((value,i) => {
             return (
-              <div className="location_List">
+              <div key={i} className="location_List">
                 <div className="location_List_header">
                   <h2>{value.store_name}</h2>
                   <ReactSVG className="svg_part" src={Time} />

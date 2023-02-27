@@ -141,7 +141,7 @@ function Footer() {
               <li>
                 <ul>
                   {menuList[1].map((e,i) => (
-                    <Link to={e.listItem}>
+                    <Link key={i} to={e.listItem}>
                       <li>{e.listItem}</li>
                     </Link>
                   ))}
@@ -149,8 +149,8 @@ function Footer() {
               </li>
               <li>
                 <ul>
-                  {menuList[2].map((e) => (
-                    <Link to={e.link}>
+                  {menuList[2].map((e,i) => (
+                    <Link  key={i} to={e.link}>
                       <li>{e.listItem}</li>
                     </Link>
                   ))}

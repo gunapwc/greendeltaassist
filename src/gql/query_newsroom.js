@@ -1,9 +1,8 @@
 import { gql } from "@apollo/client";
 
-const queryNewsroom = (id) => {
-
-    return gql`query {
-        getNewsDatas(input:{id: ${id}}) {
+export default gql `
+query getNewsDatas($id:Int) {
+    getNewsDatas(input:{id: $id,category_name:"Sports"}) {
       news_id
       category_name
       news_title
@@ -15,5 +14,3 @@ const queryNewsroom = (id) => {
     }
   }
   `;
-}
-export default queryNewsroom;

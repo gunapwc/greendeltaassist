@@ -52,8 +52,8 @@ function OurServices() {
             </div>
           </div>
 
-          {ourservices.map((value) => {
-            return <div dangerouslySetInnerHTML={{ __html: value.content }} />;
+          {ourservices.map((value,i) => {
+            return <div key={i}  dangerouslySetInnerHTML={{ __html: value.content }} />;
           })}
         </div>
       </div>

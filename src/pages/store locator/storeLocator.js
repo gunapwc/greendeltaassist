@@ -86,12 +86,12 @@ function StoreLocator() {
                     </Select>
                 </FormControl>
                 <ul>
-                    {data.map((value) => {
+                    {data.map((value,i) => {
                         if (area.length > 0) {
                             return area.map((e) => {
                                 if (e === value.city) {
                                     return (
-                                        <li>
+                                        <li key={i} >
                                            <div dangerouslySetInnerHTML={{__html:value.address}}>
                                     </div>
                                         </li>
