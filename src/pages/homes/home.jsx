@@ -7,29 +7,14 @@ import Outlets from "../../component/outlets/Outlets";
 import SimpleSlider from "../../component/slider/SliderComponent";
 import StoreFilter from "../../component/storeFilter/StoreFilter";
 import {
-  Video,
   CardOneImg,
   CardTwoImg,
   CardTwoImgApp,
-  ProductCategories1,
-  ProductCategories2,
-  ProductCategories3,
-  ProductCategories4,
   ProductCategoriesIcon1,
-  ProductCategoriesIcon2,
-  ProductCategoriesIcon3,
-  ProductCategoriesIcon4,
   HealthcareTips1,
   HealthcareTips2,
   HealthcareTips3,
   HealthcareTips4,
-  CareBrands1,
-  CareBrands2,
-  CareBrands3,
-  CareBrands4,
-  CareBrands5,
-  CareBrands6,
-  CareBrands7,
 } from "../../utils/images";
 import "./home.scss";
 import { useQuery } from "@apollo/client";
@@ -45,12 +30,8 @@ function Home() {
     __html: DOMPurify.sanitize(data1),
   });
 
-  const { loading, error, data } = useQuery(ABOUT_US_VIDEO);
-  const {
-    loading: loading1,
-    error: error1,
-    data: data1,
-  } = useQuery(Brand_List);
+  const { data } = useQuery(ABOUT_US_VIDEO);
+  const {data: data1 } = useQuery(Brand_List);
 
   const {
     loading: categoryloading,
@@ -85,7 +66,7 @@ function Home() {
   React.useEffect(() => {
     console.log(categorydata);
     if (categorydata) {
-      setcategorylist(categorydata?.categoryList?.children);
+      setcategorylist(categorydata?.categoryList[0]?.children);
       console.log(categorylista);
     }
   }, [categorydata]);
@@ -140,13 +121,13 @@ function Home() {
 
           <div className="categories_section">
             <SimpleSlider>
-              {categorylista.map((value) => {
+              {categorylista?.map((value) => {
                 return (
                   <div className="categories_section_card">
                     <img src={value.image} alt="" />
                     <div className="categories_section_card_icon">
                       <img src={ProductCategoriesIcon1} alt="" />
-                      <h2>value.name</h2>
+                      <h2>{value.name}</h2>
                     </div>
                   </div>
                 );

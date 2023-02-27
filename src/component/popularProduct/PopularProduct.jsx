@@ -6,48 +6,52 @@ import "./popularProduct.scss";
 import ProductList from "../../gql/query_product_list.graphql";
 import { useQuery } from "@apollo/client";
 
-function PopularProduct() {
+function PopularProduct(props) {
+
+  const { category , category_id } = props;
+
   const {
-    loading: loading1,
-    error: error1,
-    data: data1,
-  } = useQuery(ProductList);
+    data: product,
+  } = useQuery(ProductList, {
+    fetchPolicy: 'cache-and-network',
+    nextFetchPolicy: 'cache-first',
+    variables: {
+      category_id
+    }
+  });
 
   const [productlist, setProductlist] = React.useState([]);
 
   React.useEffect(() => {
-    console.log(data1);
+    console.log(product);
 
-    if (data1?.products?.items) {
-      setProductlist(data1?.products?.items);
+    if (product?.products?.items) {
+      setProductlist(product?.products?.items);
     }
-  }, [data1]);
+  }, [product]);
 
   return (
     <>
       <div className="popularProduct">
         <div className="popularProduct_banner">
-          <img src={ProductCategories2} alt="" />
+          <img src={category.image} alt="" />
           <div className="popularProduct_banner_text">
             <ReactSVG src="" />
-            <h6>Beauty</h6>
-            <p>
-              Beauty is beyond skin-deep & our naturally formulated range of
-              beauty-care products can help you uncover that hidden, yet
-              beautiful glow you so desire!
-            </p>
+            <h6>{category?.name}</h6>
+            <div dangerouslySetInnerHTML={{__html:category?.description}}>
+            </div>
           </div>
         </div>
 
         <div className="popularProduct_list">
           <SimpleSlider rows={2}>
-            {productlist.map((value) => {
+            {productlist?.map((value) => {
               return (
                 <div className="popularProduct_list_card">
                   <div className="popularProduct_list_card_img">
-                    <img src={value.thumbnail.url} alt="" />
+                    <img src={value?.thumbnail?.url} alt="" />
                   </div>
-                  <p>{value.name}</p>
+                  <p>{value?.name}</p>
                   <div className="popularProduct_list_card_button">
                     <button>Click here to Buy</button>
                   </div>

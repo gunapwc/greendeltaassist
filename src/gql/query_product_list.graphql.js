@@ -1,9 +1,9 @@
 import { gql } from '@apollo/client';
 
 export default gql`
-  query {
+  query getProducts($category_id: String ){
     products(
-      filter: {category_id: {eq: "8"}},
+      filter: {category_id: {eq: $category_id}},
       sort: {name: ASC},
       pageSize: 6,
       currentPage: 1

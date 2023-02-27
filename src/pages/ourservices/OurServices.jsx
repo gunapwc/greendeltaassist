@@ -1,23 +1,7 @@
 import React from "react";
 import PriTitle from "../../component/innerSection/PriTitle";
 import {
-  OurServices1,
-  OurServices2,
-  OurServices3,
   OurServices4,
-  OurServices5,
-  OurServices6,
-  OurServices7,
-  OurServices8,
-  OurServices9,
-  OurServices10,
-  OurServices11,
-  OurServices12,
-  OurServices13,
-  OurServices14,
-  OurServices15,
-  OurServices16,
-  Whatsapp,
 } from "../../utils/images";
 import "./OurServices.scss";
 import Outlets from "../../component/outlets/Outlets";
@@ -25,7 +9,12 @@ import Our_Services from "../../gql/query_our_services.graphql";
 import { useQuery } from "@apollo/client";
 
 function OurServices() {
-  const { loading, error, data } = useQuery(Our_Services);
+  const {  data } = useQuery(Our_Services,{
+    fetchPolicy: 'cache-and-network',
+    nextFetchPolicy: 'cache-first',
+    variables: {
+      identifiers: ["pharmacy-retailing", "home-delivery", "online-services", "rewards-program", "tele-consultation"],
+    }});
 
   const [ourservices, setOurServices] = React.useState([]);
 
