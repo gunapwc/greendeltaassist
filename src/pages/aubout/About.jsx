@@ -29,11 +29,11 @@ export const About = () => {
     <p className='emg_text'>With every new innovation, Green Delta Assist works incessantly to bring itself closer to its consumers so as to fulfill its mission of having Green Delta Assist in every neighbourhood & a knowledgeable Green Delta Assist available 24/7 for every household!</p>
   </div>
 
-  <PriTitle 
-  title={"OUR PHILOSOPHY"}
-  subTitle ={"We’ll Treat You Well"} 
-  details ={"We live by this promise that sums up what we do & why we exist. This is our guiding philosophy in our interactions with patients, doctors, employees & society at large."}/>
-  
+    <PriTitle 
+    title={"OUR PHILOSOPHY"}
+    subTitle ={"We’ll Treat You Well"} 
+    details ={"We live by this promise that sums up what we do & why we exist. This is our guiding philosophy in our interactions with patients, doctors, employees & society at large."}/>
+    
   <PriTitle  
   subTitle={"Our Values"} 
   details={"We, at Green Delta Assist, abide by a core set of values that guide our organisational behaviour & decision making & that create the unique ethos that is imbibed in every Asterian."}/>

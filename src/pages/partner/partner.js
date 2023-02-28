@@ -1,6 +1,5 @@
 import './partner.scss';
 import img1 from "./partner.jpg.pagespeed.ic.PaL5pYEgPq.webp"
-import home from "./home-svgrepo-com.svg"
 import Banner from '../../component/banner/Banner';
 import { useQuery, gql } from '@apollo/client';
 import queryPartner from '../../gql/query_partner';
