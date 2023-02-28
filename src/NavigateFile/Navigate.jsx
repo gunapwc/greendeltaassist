@@ -4,6 +4,7 @@ import { About } from '../pages/aubout/About'
 import Header from '../component/header/header';
 import Footer from '../pages/footer/footer';
 import Partner from '../pages/partner/partner';
+import Supplier from '../pages/supplier/supplier';
 import BlogMain from '../pages/blogMain/BlogMain'
 import StoreLocator from '../pages/storeLocator/StoreLocator'
 import Blog from '../pages/blog/Blog'
@@ -23,6 +24,7 @@ function Navigate() {
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about-Us' element={<About/>}/>
+        <Route path='/supplier' element={<Supplier/>}/>
         <Route path='/partner' element={<Partner/>}/>
         <Route path='/blog-main' element={<BlogMain/>}/>  
         <Route path='/blog' element={<Blog/>}/>  
