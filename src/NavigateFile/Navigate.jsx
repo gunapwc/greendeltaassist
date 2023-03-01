@@ -25,7 +25,7 @@ function Navigate() {
         <Route path='/about-Us' element={<About/>}/>
         <Route path='/partner' element={<Partner/>}/>
         <Route path='/blog-main' element={<BlogMain/>}/>  
-        <Route path='/blog' element={<Blog/>}/>  
+        <Route path='/blog/:id?' element={<Blog/>}/>  
         <Route path='/product-categories' element={<ProductCategories/>}/>
         <Route path='/store-locator' element={<StoreLocator/>}/>
         <Route path='/our-services' element={<OurServices/>}/>

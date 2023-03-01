@@ -7,6 +7,7 @@ import { useQuery, gql } from '@apollo/client';
 import "./newsroom.scss"
 import News_Room from '../../gql/query_newsroom';
 import { useNavigate } from 'react-router-dom';
+
 const NewsRoom = () => {
     let Navigate = useNavigate()
     const onclickCard = (id) => {
@@ -15,7 +16,7 @@ const NewsRoom = () => {
     const [content, setContent] = useState([]);
     const { loading, error, data } = useQuery(News_Room,{variables:{ id:"0"}});
     useEffect(() => {
-        if (data) {
+        if (data) { 
             setContent(data.getNewsDatas);
         }
     }, [data]

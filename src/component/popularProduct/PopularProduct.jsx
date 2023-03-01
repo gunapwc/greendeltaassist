@@ -56,8 +56,8 @@ function PopularProduct(props) {
                     <button>Click here to Buy</button>
                   </div>
                 </div>
-              );
-            })}
+                  );
+                })}
           </SimpleSlider>
         </div>
       </div>
