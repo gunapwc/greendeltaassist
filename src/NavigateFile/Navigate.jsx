@@ -13,6 +13,7 @@ import OurServices from '../pages/ourservices/OurServices';
 import ProductCategories from '../pages/productCategories/ProductCategories'
 import NewsRoom from '../pages/newsroom/newsroom';
 import News from '../pages/news/news';
+import RegisterIntrestPage from '../pages/partner/registerIntrestPage';
 
 
 function Navigate() {
@@ -23,7 +24,10 @@ function Navigate() {
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about-Us' element={<About/>}/>
-        <Route path='/partner' element={<Partner/>}/>
+        <Route path='/partner'>
+          <Route path='' element={<Partner/>}/>
+          <Route path="registerInterest" element={<RegisterIntrestPage/>}/>
+          </Route>
         <Route path='/blog-main' element={<BlogMain/>}/>  
         <Route path='/blog' element={<Blog/>}/>  
         <Route path='/product-categories' element={<ProductCategories/>}/>
