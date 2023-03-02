@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export default gql `
 query getNewsDatas($id:Int) {
-    getNewsDatas(input:{id: $id,category_name:"Sports"}) {
+    getNewsDatas(input:{id: $id}) {
       news_id
       category_name
       news_title

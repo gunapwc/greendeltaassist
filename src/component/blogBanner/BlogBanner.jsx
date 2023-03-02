@@ -31,40 +31,38 @@ function BlogBanner() {
   return (
     <div className="blog container ">
       {bloglists?.map((value, i) => {
-        
-      if(i===0){ return <div className="blog_main">
-        <Link to={"/blog/"+value.blog_id}>
-          <img src={value.thumb_image_full_path} alt="" />
-          <div className="blog_text">
-            <p>{value.blog_title}</p>
-            <h>{value.category_name}</h>
-            <button>KEEP READING</button>
-          </div>
-        </Link>
-      </div>
-      }
-    
+        if (i === 0) {
+          return (
+            <div className="blog_main">
+              <Link to={"/blog/" + value.blog_id}>
+                <img src={value.thumb_image_full_path} alt="" />
+                <div className="blog_text">
+                  <p>{value.blog_title}</p>
+                  <h>{value.category_name}</h>
+                  <button>KEEP READING</button>
+                </div>
+              </Link>
+            </div>
+          );
+        }
       })}
 
       <div className="blog_sub">
-
-  {bloglists?.map((value, i) => {
-      
-       
-        if(i>0 && i<=4){ return <div className="blog_sub_card">
-          <Link to={"/blog/"+value.blog_id}>
-            <img src={value.thumb_image_full_path} alt="" />
-            <div className="blog_text">
-              <h5>{value.category_name}</h5>
-            </div>
-          </Link>
-        </div> 
-        }
+        {bloglists?.map((value, i) => {
+          if (i > 0 && i <= 4) {
+            return (
+              <div className="blog_sub_card">
+                <Link to={"/blog/" + value.blog_id}>
+                  <img src={value.thumb_image_full_path} alt="" />
+                  <div className="blog_text">
+                    <h5>{value.category_name}</h5>
+                  </div>
+                </Link>
+              </div>
+            );
+          }
         })}
-
-        </div>
-
-    
+      </div>
     </div>
   );
 }
@@ -86,14 +84,11 @@ function BlogCard() {
     }
   }, [blog]);
 
-  return (
-    
-
-      bloglists?.map((value, i) => {
-
-        return (
-        (i>0) &&  <div className="Category_card">
-          <Link to={"/blog/"+value.blog_id}>
+  return bloglists?.map((value, i) => {
+    return (
+      i > 0 && (
+        <div className="Category_card">
+          <Link to={"/blog/" + value.blog_id}>
             <div className="Category_card_img">
               <img src={value.thumb_image_full_path} alt="" />
             </div>
@@ -102,23 +97,20 @@ function BlogCard() {
                 <button>{value.category_name}</button>
                 <p className="Category_card_inner_date">{value?.created_at}</p>
               </div>
-              <h1 className="Category_card_prod_title">
-                {value?.blog_title}
-              </h1>
+              <h1 className="Category_card_prod_title">{value?.blog_title}</h1>
 
               <p className="Category_card_ditails">
-                {value.blog_description.substring(0,30)}
+                {value.blog_description.substring(0, 30)}
               </p>
               <div className="Category_card_fav">
                 <img src="" alt="" />
               </div>
             </div>
           </Link>
-          </div>
-        );
-      })
-    
-  );
+        </div>
+      )
+    );
+  });
 }
 
 // export default BlogBanner
