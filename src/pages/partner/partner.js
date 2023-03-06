@@ -23,6 +23,9 @@ function Partner() {
     const onRegisterClick = () => {
         Navigate("registerInterest");
     }
+    const onProductClick = () => {
+        Navigate("productRegistration");
+    }
     return (
         <>
        
@@ -81,7 +84,7 @@ function Partner() {
                 <div className='button-div'>
                     <button className='button'>SUPPLIER REGISTRATION</button>
                     <div style={{width:"40px"}}></div>
-                    <button className='button'>EXISTING SUPPLIER</button>
+                    <button className='button' onClick={onProductClick}>Product Registration</button>
                 </div>
             </div>
         </div>

@@ -14,35 +14,37 @@ import ProductCategories from '../pages/productCategories/ProductCategories'
 import NewsRoom from '../pages/newsroom/newsroom';
 import News from '../pages/news/news';
 import RegisterIntrestPage from '../pages/partner/registerIntrestPage';
+import ProductRegistration from '../pages/partner/productregistration';
 
 
 function Navigate() {
   return (
     <>
-    <BrowserRouter>
-    <Header/>
-    <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about-Us' element={<About/>}/>
-        <Route path='/partner'>
-          <Route path='' element={<Partner/>}/>
-          <Route path="registerInterest" element={<RegisterIntrestPage/>}/>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about-Us' element={<About />} />
+          <Route path='/partner'>
+            <Route path='' element={<Partner />} />
+            <Route path="registerInterest" element={<RegisterIntrestPage />} />
+            <Route path="productRegistration" element={<ProductRegistration />} />
           </Route>
-        <Route path='/blog-main' element={<BlogMain/>}/>  
-        <Route path='/blog' element={<Blog/>}/>  
-        <Route path='/product-categories' element={<ProductCategories/>}/>
-        <Route path='/store-locator' element={<StoreLocator/>}/>
-        <Route path='/our-services' element={<OurServices/>}/>
-        <Route path='/newsroom' element={<NewsRoom/>}/>
-        <Route path='/news'>
-          <Route path = ':id' element={<News/>}/>
-        </Route>
-    </Routes>
+          <Route path='/blog-main' element={<BlogMain />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/product-categories' element={<ProductCategories />} />
+          <Route path='/store-locator' element={<StoreLocator />} />
+          <Route path='/our-services' element={<OurServices />} />
+          <Route path='/newsroom' element={<NewsRoom />} />
+          <Route path='/news'>
+            <Route path=':id' element={<News />} />
+          </Route>
+        </Routes>
 
-    <div style={{height:"100px"}}></div> 
-    <Footer/>
-    </BrowserRouter>
-   
+        <div style={{ height: "100px" }}></div>
+        <Footer />
+      </BrowserRouter>
+
     </>
   )
 }

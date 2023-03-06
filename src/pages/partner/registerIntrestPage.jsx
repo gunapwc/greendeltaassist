@@ -3,6 +3,9 @@ import "./registerIntrestPage.scss";
 import home from "./home-svgrepo-com.svg"
 import { Button } from "../../component/button/button";
 import InputBox from "../../component/inputbox/input";
+import { useQuery, useMutation, gql } from '@apollo/client';
+import mutationFranchise from "../../gql/mutation_frachiseregistration_form";
+import QueryCall from "./customquerycall";
 
 const RegisterIntrestPage = () => {
     const [formData, setFormData] = useState({
@@ -28,15 +31,20 @@ const RegisterIntrestPage = () => {
         "phone": "",
         "Email": "",
         "Address": "",
-        "LOS": ""
+        "los": ""
     })
+    const [submitFranchiseForm] = useMutation(mutationFranchise, { fetchPolicy: "no-cache", onCompleted: (response) => { console.log(response) }, onError: (error) => { console.log(error) } });
+
     const handleClick = (e) => {
         e.preventDefault();
+        
+        submitFranchiseForm({ variables: formData })
+        // const { loading , error ,data} = QueryCall(formData);
         console.log(formData);
     }
     const handleChange = (e) => {
         let data = formData;
-        data[e.target.name]=e.target.value;
+        data[e.target.name] = e.target.value;
         setFormData(data)
     }
     return (
@@ -59,35 +67,35 @@ const RegisterIntrestPage = () => {
                 <h2>Primary Contact Information</h2>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="First Name" type="text" name="FirstName"  value={formData.FirstName} onChange={(e)=>{handleChange(e);}} ></InputBox>
+                        <InputBox placeholder="First Name" type="text" name="FirstName" value={formData.FirstName} onChange={(e) => { handleChange(e); }} ></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox type="date" name="date" value={formData.date} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox type="date" name="date" value={formData.date} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Current Address" type="text" name="CurrentAddress" value={formData.CurrentAddress} onChange={(e)=>{handleChange(e);}}></InputBox>
-                    </div>
-                </div>
-                <div className="row" >
-                    <div className="col">
-                        <InputBox placeholder="Middle Name" type="text" name="MiddleName" value={formData.MiddleName} onChange={(e)=>{handleChange(e);}}></InputBox>
-                    </div>
-                    <div className="col">
-                        <InputBox placeholder="Contact Number" type="number" name="cNumber" value={formData.cNumber} onChange={(e)=>{handleChange(e);}}></InputBox>
-                    </div>
-                    <div className="col">
-                        <InputBox placeholder="Email" type="email" name="Email1" value={formData.Email1} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Current Address" type="text" name="CurrentAddress" value={formData.CurrentAddress} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Last Name" type="text" name="LastName" value={formData.LastName} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Middle Name" type="text" name="MiddleName" value={formData.MiddleName} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="City" type="text" name="city" value={formData.city} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Contact Number" type="number" name="cNumber" value={formData.cNumber} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <select className="selectbox" name="country" value={formData.country} onChange={(e)=>{handleChange(e);}}>
+                        <InputBox placeholder="Email" type="email" name="Email1" value={formData.Email1} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <div className="row" >
+                    <div className="col">
+                        <InputBox placeholder="Last Name" type="text" name="LastName" value={formData.LastName} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                    <div className="col">
+                        <InputBox placeholder="City" type="text" name="city" value={formData.city} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                    <div className="col">
+                        <select className="selectbox" name="country" value={formData.country} onChange={(e) => { handleChange(e); }}>
                             <option>Country*</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -344,7 +352,7 @@ const RegisterIntrestPage = () => {
                 <div className="row" >
                     <div className="col">
 
-                        <select className="selectbox" name="ownership" value={formData.ownership} onChange={(e)=>{handleChange(e);}}>
+                        <select className="selectbox" name="ownership" value={formData.ownership} onChange={(e) => { handleChange(e); }}>
                             <option>Type of Ownership - Active / Passive</option>
                             <option value="Active">Active</option>
                             <option value="Passive">Passive</option>
@@ -353,33 +361,33 @@ const RegisterIntrestPage = () => {
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Company Name" type="text" name="companyName" value={formData.companyName} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Company Name" type="text" name="companyName" value={formData.companyName} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Date of Establishment" type="date" name="dateofE" value={formData.dateofE} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Date of Establishment" type="date" name="dateofE" value={formData.dateofE} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Type of Business" type="text" name="Business" value={formData.Business} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Type of Business" type="text" name="Business" value={formData.Business} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Product/Services" type="text" name="Services" value={formData.Services} onChange={(e)=>{handleChange(e);}}></InputBox>
-                    </div>
-                </div>
-                <div className="row" >
-                    <div className="col">
-                        <InputBox placeholder="Pleaase Elpain Ownership structure/Shareholders of the Franchise" type="text" name="structure" value={formData.structure} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Product/Services" type="text" name="Services" value={formData.Services} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Amount of capital available" type="number" name="amount" value={formData.amount} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Pleaase Elpain Ownership structure/Shareholders of the Franchise" type="text" name="structure" value={formData.structure} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <select className="selectbox" name="territory" value={formData.territory} onChange={(e)=>{handleChange(e);}}>
+                        <InputBox placeholder="Amount of capital available" type="number" name="amount" value={formData.amount} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <div className="row" >
+                    <div className="col">
+                        <select className="selectbox" name="territory" value={formData.territory} onChange={(e) => { handleChange(e); }}>
                             <option>Territory of Ownership*</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -634,28 +642,28 @@ const RegisterIntrestPage = () => {
                 <p>Give A Complete Record of your Position, Contact Information, & Responsibilities within the Organization.</p>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Full Name" type="text" name="FullName" value={formData.FullName} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Full Name" type="text" name="FullName" value={formData.FullName} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Position title & Duties" type="text" name="duties" value={formData.duties} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Position title & Duties" type="text" name="duties" value={formData.duties} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Phone Number" type="number" name="phone" value={formData.phone} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Phone Number" type="number" name="phone" value={formData.phone} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Email" type="email" name="Email" value={formData.Email} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Email" type="email" name="Email" value={formData.Email} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <InputBox placeholder="Address" type="text" name="Address" value={formData.Address} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Address" type="text" name="Address" value={formData.Address} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Length of service" type="number" name="LOS" value={formData.LOS} onChange={(e)=>{handleChange(e);}}></InputBox>
+                        <InputBox placeholder="Length of service" type="number" name="los" value={formData.los} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <h2>Applicant's Financials</h2>
