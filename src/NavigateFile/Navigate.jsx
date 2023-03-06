@@ -19,7 +19,7 @@ import News from '../pages/news/news';
 function Navigate() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/greendeltaassist" >
     <Header/>
     <Routes>
         <Route path='/' element={<Home/>}/>
