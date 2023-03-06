@@ -8,6 +8,7 @@ import { useQuery,useLazyQuery, gql } from "@apollo/client";
 import Blogs from "../../gql/query_blog.graphql";
 
 function Blog() {
+  
   const { id } = useParams();
 
   console.log(id);
