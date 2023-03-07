@@ -4,6 +4,7 @@ import Banner from '../../component/banner/Banner';
 import { useQuery, gql } from '@apollo/client';
 import queryPartner from '../../gql/query_partner';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // import Menu from '@mui/material/Menu';
 // import MenuItem from '@mui/material/MenuItem';
@@ -11,12 +12,19 @@ import { useEffect, useState } from 'react';
 function Partner() {
     const { loading, error, data } = useQuery(queryPartner);
     console.log(data);
+    const Navigate = useNavigate();
     const [content,setContent] = useState();
     useEffect(()=>{
             if(data){
                 setContent(data.cmsBlocks.items[0].content);
             }
     },[data])
+    const onRegisterClick = () => {
+        Navigate("registerInterest");
+    }
+    const onProductClick = () => {
+        Navigate("productRegistration");
+    }
     return (
         <>
        
@@ -40,8 +48,8 @@ function Partner() {
             <div className='container'>
               <Banner img ={img1} title={"Partner With Us"}text={"Quality Health Care Within Reach"}/>
               </div>
-            <div className='container' dangerouslySetInnerHTML={{__html:content}}></div>
-            {/* <div className="content-div container">
+            {/* <div className='container' dangerouslySetInnerHTML={{__html:content}}></div> */}
+            <div className="content-div container">
 
                 <br />
                 <br />
@@ -60,7 +68,7 @@ function Partner() {
                 <br />
                 <br />
                 <div className='button-div'>
-                    <button className='button'>Register Interest</button>
+                    <button className='button' onClick={onRegisterClick} >Register Interest</button>
                 </div>
                 <br />
                 <br />
@@ -75,9 +83,9 @@ function Partner() {
                 <div className='button-div'>
                     <button className='button'>SUPPLIER REGISTRATION</button>
                     <div style={{width:"40px"}}></div>
-                    <button className='button'>EXISTING SUPPLIER</button>
+                    <button className='button' onClick={onProductClick}>Product Registration</button>
                 </div>
-            </div> */}
+            </div>
         </div>
             </>
     );
