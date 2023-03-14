@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/greendeltaassist/static/css/main.6bcdcf07.css",
-    "main.js": "/greendeltaassist/static/js/main.8b2850b1.js",
+    "main.js": "/greendeltaassist/static/js/main.888f1700.js",
     "static/js/787.03e199e3.chunk.js": "/greendeltaassist/static/js/787.03e199e3.chunk.js",
     "static/media/homenew.mp4": "/greendeltaassist/static/media/homenew.cc3953b54d34d35e57e2.mp4",
     "static/media/Einstein.svg": "/greendeltaassist/static/media/Einstein.9d1e1054f5cccc369a34ed1698709396.svg",
@@ -72,11 +72,11 @@
     "static/media/location-green.svg": "/greendeltaassist/static/media/location-green.f6db025d0fee78745c995250c04fcceb.svg",
     "static/media/search.svg": "/greendeltaassist/static/media/search.19950433fa712526b0d79fbbcfa2952a.svg",
     "main.6bcdcf07.css.map": "/greendeltaassist/static/css/main.6bcdcf07.css.map",
-    "main.8b2850b1.js.map": "/greendeltaassist/static/js/main.8b2850b1.js.map",
+    "main.888f1700.js.map": "/greendeltaassist/static/js/main.888f1700.js.map",
     "787.03e199e3.chunk.js.map": "/greendeltaassist/static/js/787.03e199e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6bcdcf07.css",
-    "static/js/main.8b2850b1.js"
+    "static/js/main.888f1700.js"
   ]
 }
