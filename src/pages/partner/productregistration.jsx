@@ -21,7 +21,7 @@ const ProductRegistration = () => {
         "origin_country": ""
     })
 
-    const [submitProductForm] = useMutation(mutationProduct, { fetchPolicy: "no-cache", onCompleted: (response) => { console.log(response) }, onError: (error) => { console.log(error) } });
+    const [submitProductForm, { loading, error, data }] = useMutation(mutationProduct, { fetchPolicy: "no-cache", onCompleted: (response) => { console.log(response) }, onError: (error) => { console.log(error) } });
 
 
     const handleClick = (e) => {
@@ -30,7 +30,12 @@ const ProductRegistration = () => {
         // const { loading , error ,data} = QueryCall(formData);
         submitProductForm({ variable: formData })
 
-        console.log(formData);
+        console.log(data);
+        if (error)
+            alert(error);
+        else
+            alert(data.productRegistration.success_message);
+
     }
 
     const handleChange = (e) => {
@@ -56,30 +61,18 @@ const ProductRegistration = () => {
                 <br />
                 <div className="row smallrow" >
                     <div className="col">
-                        <InputBox placeholder="Product Name" type="text" name="product_name" value={formData.product_name} onChange={(e) => { handleChange(e); }} ></InputBox>
+                        <InputBox placeholder="Name" type="text" name="name"  ></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Strength" type="text" name="strength" value={formData.strength} onChange={(e) => { handleChange(e); }}></InputBox>
+                        <InputBox placeholder="Contact Number" type="number" name="Cnumber"></InputBox>
                     </div>
                 </div>
                 <div className="row smallrow" >
                     <div className="col">
-                        <InputBox placeholder="Packing" type="text" name="packing" value={formData.packing} onChange={(e) => { handleChange(e); }}></InputBox>
+                        <InputBox placeholder="Address" type="text" name="address" ></InputBox>
                     </div>
                 </div>
-                <div className="row smallrow" >
-                    <div className="col">
-                        <InputBox placeholder="Content" type="text" name="content" value={formData.content} onChange={(e) => { handleChange(e); }}></InputBox>
-                    </div>
-                </div>
-                <div className="row smallrow" >
-                    <div className="col">
-                        <InputBox placeholder="Manufacturer" type="text" name="manufacturer" value={formData.manufacturer} onChange={(e) => { handleChange(e); }}></InputBox>
-                    </div>
-                    <div className="col">
-                        <InputBox placeholder="Origin Country" type="text" name="origin_country" value={formData.origin_country} onChange={(e) => { handleChange(e); }}></InputBox>
-                    </div>
-                </div>
+
                 <p>
                     Product registration fee will be applicable based on the product/range. Reg fee varies from category to category.
                     Pharmacy accepts/rejects the application

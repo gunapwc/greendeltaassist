@@ -33,14 +33,19 @@ const RegisterIntrestPage = () => {
         "Address": "",
         "los": ""
     })
-    const [submitFranchiseForm] = useMutation(mutationFranchise, { fetchPolicy: "no-cache", onCompleted: (response) => { console.log(response) }, onError: (error) => { console.log(error) } });
+    const [submitFranchiseForm, { loading, error, data }] = useMutation(mutationFranchise, { fetchPolicy: "no-cache", onCompleted: (response) => { console.log(response) }, onError: (error) => { console.log(error) } });
 
     const handleClick = (e) => {
         e.preventDefault();
-        
+
         submitFranchiseForm({ variables: formData })
         // const { loading , error ,data} = QueryCall(formData);
         console.log(formData);
+        if (error)
+            alert(error);
+        else
+            alert(data.franchiseRequest.success_message);
+
     }
     const handleChange = (e) => {
         let data = formData;
@@ -95,8 +100,8 @@ const RegisterIntrestPage = () => {
                         <InputBox placeholder="City" type="text" name="city" value={formData.city} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <select className="selectbox" name="country" value={formData.country} onChange={(e) => { handleChange(e); }}>
-                            <option>Country*</option>
+                        <select className="selectbox" name="country" defaultValue={formData.country} onSelect={(e) => { handleChange(e); }}>
+                            <option value="">Country*</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
                             <option value="Algeria">Algeria</option>
@@ -352,7 +357,7 @@ const RegisterIntrestPage = () => {
                 <div className="row" >
                     <div className="col">
 
-                        <select className="selectbox" name="ownership" value={formData.ownership} onChange={(e) => { handleChange(e); }}>
+                        <select className="selectbox" name="ownership" defaultValue={formData.country} onSelect={(e) => { handleChange(e); }}>
                             <option>Type of Ownership - Active / Passive</option>
                             <option value="Active">Active</option>
                             <option value="Passive">Passive</option>
@@ -387,7 +392,7 @@ const RegisterIntrestPage = () => {
                 </div>
                 <div className="row" >
                     <div className="col">
-                        <select className="selectbox" name="territory" value={formData.territory} onChange={(e) => { handleChange(e); }}>
+                        <select className="selectbox" name="territory" defaultValue={formData.country} onSelect={(e) => { handleChange(e); }}>
                             <option>Territory of Ownership*</option>
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
