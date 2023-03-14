@@ -3,7 +3,7 @@ import "./registerIntrestPage.scss";
 import home from "./home-svgrepo-com.svg"
 import { Button } from "../../component/button/button";
 import InputBox from "../../component/inputbox/input";
-import { useQuery,useMutation, gql } from '@apollo/client';
+import { useQuery, useMutation, gql } from '@apollo/client';
 import mutationProduct from "../../gql/mutation_productregistartion";
 import QueryCall from "./customquerycall";
 
@@ -28,14 +28,14 @@ const ProductRegistration = () => {
         e.preventDefault();
         // const { loading, error, data } = useQuery(queryFranchise(formData));
         // const { loading , error ,data} = QueryCall(formData);
-        submitProductForm({variable:formData})
+        submitProductForm({ variable: formData })
 
         console.log(formData);
     }
 
     const handleChange = (e) => {
         let data = formData;
-        data[e.target.name]=e.target.value;
+        data[e.target.name] = e.target.value;
         setFormData(data)
     }
 
@@ -52,47 +52,85 @@ const ProductRegistration = () => {
 
                 <br />
                 <br />
-                <h1>Product Registration </h1>
+                <h1>General Information </h1>
+                <br />
+                <div className="row smallrow" >
+                    <div className="col">
+                        <InputBox placeholder="Product Name" type="text" name="product_name" value={formData.product_name} onChange={(e) => { handleChange(e); }} ></InputBox>
+                    </div>
+                    <div className="col">
+                        <InputBox placeholder="Strength" type="text" name="strength" value={formData.strength} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <div className="row smallrow" >
+                    <div className="col">
+                        <InputBox placeholder="Packing" type="text" name="packing" value={formData.packing} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <div className="row smallrow" >
+                    <div className="col">
+                        <InputBox placeholder="Content" type="text" name="content" value={formData.content} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <div className="row smallrow" >
+                    <div className="col">
+                        <InputBox placeholder="Manufacturer" type="text" name="manufacturer" value={formData.manufacturer} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                    <div className="col">
+                        <InputBox placeholder="Origin Country" type="text" name="origin_country" value={formData.origin_country} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <p>
+                    Product registration fee will be applicable based on the product/range. Reg fee varies from category to category.
+                    Pharmacy accepts/rejects the application
+                </p>
+                <br />
+                <br />
+                <div className="row">
+                    <div className="col1">
+                        <h1>Product Details </h1>
+                    </div>
+                    <div className="col">
+                        <h1>Price Details</h1>
+                    </div>
+                </div>
                 <br />
                 <div className="row" >
                     <div className="col">
                         <InputBox placeholder="Product Name" type="text" name="product_name" value={formData.product_name} onChange={(e) => { handleChange(e); }} ></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Packing" type="Packing" name="packing" value={formData.packing} onChange={(e) => { handleChange(e); }}></InputBox>
-                    </div>
-                    <div className="col">
-                        <InputBox placeholder="Pharmacy price" type="text" name="pharmacy_price" value={formData.pharmacy_price} onChange={(e) => { handleChange(e); }}></InputBox>
-                    </div>
-                </div>
-                <div className="row" >
-                    <div className="col">
                         <InputBox placeholder="Strength" type="text" name="strength" value={formData.strength} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Content" type="text" name="content" value={formData.content} onChange={(e) => { handleChange(e); }}></InputBox>
-                    </div>
-                    <div className="col">
-                        <InputBox placeholder="Public Price" type="number" name="public_price" value={formData.public_price} onChange={(e) => { handleChange(e); }}></InputBox>
+                        <InputBox placeholder="Price to Pharmacy" type="text" name="pharmacy_price" value={formData.pharmacy_price} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
                 <div className="row" >
-                    <div className="col">
-                        <InputBox placeholder="Manufacturer" type="text" name="manufacturer" value={formData.manufacturer} onChange={(e) => { handleChange(e); }}></InputBox>
+                    <div className="col1">
+                        <InputBox placeholder="Packing" type="text" name="packing" value={formData.packing} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
-                        <InputBox placeholder="Category" type="text" name="category" value={formData.category} onChange={(e) => { handleChange(e); }}></InputBox>
+                        <InputBox placeholder="Price to Public" type="text" name="public_price" value={formData.public_price} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <div className="row smallrow" >
+                    <div className="col">
+                        <InputBox placeholder="Content" type="text" name="content" value={formData.content} onChange={(e) => { handleChange(e); }}></InputBox>
+                    </div>
+                </div>
+                <div className="row smallrow" >
+                    <div className="col">
+                        <InputBox placeholder="Manufacturer" type="text" name="manufacturer" value={formData.manufacturer} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                     <div className="col">
                         <InputBox placeholder="Origin Country" type="text" name="origin_country" value={formData.origin_country} onChange={(e) => { handleChange(e); }}></InputBox>
                     </div>
                 </div>
-                <br />
-                <br />
                 <div className="aligncenter">
                     <input type="submit" value="Register Now"></input>
                 </div>
-               
+
             </form>
         </div>
     )

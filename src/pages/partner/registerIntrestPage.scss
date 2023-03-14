@@ -12,7 +12,8 @@
     }
 
     p {
-        font-size: medium;
+        font-size: larger;
+        width: 100%;
     }
 }
 
@@ -50,4 +51,18 @@
     width:100%;
     height:35px;
     margin: 10px;
+}
+
+.col{
+    width:100%;
+    height:35px;
+    margin: 10px;
+}
+.col1{
+    width:204%;
+    height:35px;
+    margin: 10px;
+}
+.smallrow{
+    width:66%;
 }
