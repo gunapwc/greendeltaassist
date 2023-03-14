@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/greendeltaassist/static/css/main.7cbd6cdb.css",
-    "main.js": "/greendeltaassist/static/js/main.4a628a24.js",
+    "main.css": "/greendeltaassist/static/css/main.6bcdcf07.css",
+    "main.js": "/greendeltaassist/static/js/main.8b2850b1.js",
     "static/js/787.03e199e3.chunk.js": "/greendeltaassist/static/js/787.03e199e3.chunk.js",
     "static/media/homenew.mp4": "/greendeltaassist/static/media/homenew.cc3953b54d34d35e57e2.mp4",
     "static/media/Einstein.svg": "/greendeltaassist/static/media/Einstein.9d1e1054f5cccc369a34ed1698709396.svg",
@@ -64,18 +64,19 @@
     "static/media/xservicedeliver-icon4.png.pagespeed.ic.kNBrINrdxR.webp": "/greendeltaassist/static/media/xservicedeliver-icon4.png.pagespeed.ic.kNBrINrdxR.ae7826e2f4f6b6ce6c93.webp",
     "static/media/shipping.svg": "/greendeltaassist/static/media/shipping.b38fb0f3661a9769a3f3f5478cb80c64.svg",
     "static/media/setting.svg": "/greendeltaassist/static/media/setting.28250bab3c1b2cd96e8d26cb0e6b7e70.svg",
+    "static/media/home-svgrepo-com.svg": "/greendeltaassist/static/media/home-svgrepo-com.2fa4c7041c160e61197cb72431876215.svg",
     "index.html": "/greendeltaassist/index.html",
     "static/media/call-green.svg": "/greendeltaassist/static/media/call-green.129cd747d8c16aa9d8d94c2c05fd662f.svg",
     "static/media/servicedeliver-icon5_01.svg": "/greendeltaassist/static/media/servicedeliver-icon5_01.d43eee28dfdb283e363118d9ee53c584.svg",
     "static/media/watch.svg": "/greendeltaassist/static/media/watch.7c73793f187fae954c831a5101643d42.svg",
     "static/media/location-green.svg": "/greendeltaassist/static/media/location-green.f6db025d0fee78745c995250c04fcceb.svg",
     "static/media/search.svg": "/greendeltaassist/static/media/search.19950433fa712526b0d79fbbcfa2952a.svg",
-    "main.7cbd6cdb.css.map": "/greendeltaassist/static/css/main.7cbd6cdb.css.map",
-    "main.4a628a24.js.map": "/greendeltaassist/static/js/main.4a628a24.js.map",
+    "main.6bcdcf07.css.map": "/greendeltaassist/static/css/main.6bcdcf07.css.map",
+    "main.8b2850b1.js.map": "/greendeltaassist/static/js/main.8b2850b1.js.map",
     "787.03e199e3.chunk.js.map": "/greendeltaassist/static/js/787.03e199e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cbd6cdb.css",
-    "static/js/main.4a628a24.js"
+    "static/css/main.6bcdcf07.css",
+    "static/js/main.8b2850b1.js"
   ]
 }
